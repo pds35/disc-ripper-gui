@@ -9,6 +9,7 @@ the fake one in Phase 3+ — the request/poll pattern stays the same.
 
 from flask import Flask, jsonify
 
+import drive
 import jobs
 
 app = Flask(__name__)
@@ -53,6 +54,32 @@ def start_job():
 def job_status():
     """Poll this to see the current job's state."""
     return jsonify(jobs.get_status())
+
+
+@app.route("/api/drive/wake", methods=["POST"])
+def wake_drive():
+    """Send the SuperDrive wake-up command. Safe to call any time."""
+    result = drive.wake_drive()
+    status_code = 200 if result["success"] else 502
+    return jsonify(result), status_code
+
+
+@app.route("/api/drive/eject", methods=["POST"])
+def eject_drive():
+    """
+    Run the eject fallback chain.
+
+    Refuses to eject while a job is actively running — pulling the disc
+    mid-rip would corrupt the rip and likely confuse HandBrake rather
+    than cleanly failing. The person has to wait for the job to finish
+    (or we could add a "cancel job" endpoint later if that's needed).
+    """
+    if jobs.get_status()["state"] == "running":
+        return jsonify(error="cannot eject while a job is running"), 409
+
+    result = drive.eject_drive()
+    status_code = 200 if result["success"] else 502
+    return jsonify(result), status_code
 
 
 if __name__ == "__main__":

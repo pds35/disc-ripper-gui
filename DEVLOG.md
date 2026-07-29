@@ -26,3 +26,10 @@ before Phase 3 (progress parsing).
 Next: Phase 1 — background job runner. Prove a subprocess can be
 launched from a Flask route and survive the request returning, with
 status pollable via a separate endpoint.
+
+Dead end: pasting `app.py`'s content via a `cat > file << 'EOF'` heredoc got
+silently truncated partway through (46 of ~63 lines), leaving the shell stuck
+waiting at a `>` prompt and the file syntactically broken. Not a WiFi issue
+this time — on the Pi's own desktop, so likely just a large-paste buffering
+quirk with that particular terminal. Fixed by using `nano` instead — pastes
+into an editor buffer proved more reliable than a heredoc for large blocks.

@@ -1,0 +1,4 @@
+# Phase 0: just enough to run the empty app.
+# More gets added as later phases need it (e.g. pytest for Phase 3 tests).
+flask==3.1.*
+pytest==8.*

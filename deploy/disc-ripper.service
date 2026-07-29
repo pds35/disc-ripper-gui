@@ -1,0 +1,22 @@
+# Placeholder — not used until Phase 7 (deploy).
+# Alternative to the Docker route if device access proves easier to
+# manage directly on the host.
+#
+# Install with:
+#   sudo cp disc-ripper.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now disc-ripper
+
+[Unit]
+Description=Disc Ripper GUI
+After=network.target
+
+[Service]
+Type=simple
+User=pauls
+WorkingDirectory=/home/pauls/disc-ripper-gui
+ExecStart=/home/pauls/disc-ripper-gui/.venv/bin/python backend/app.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

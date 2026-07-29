@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# Env / secrets — real values never get committed, .env.example does
+.env
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Ripped media should never end up in the repo by accident
+*.mkv
+*.flac
+*.ogg

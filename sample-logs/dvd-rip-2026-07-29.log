@@ -1,0 +1,8 @@
+x264 [info]: kb/s:779.49
+[17:27:13] mux: track 0, 218937 frames, 853224370 bytes, 779.37 kbps, fifo 8192
+[17:27:13] mux: track 1, 364917 frames, 175160160 bytes, 160.00 kbps, fifo 16384
+[17:27:13] mux: track 2, 2011 frames, 3836220 bytes, 3.50 kbps, fifo 64
+[17:27:13] Finished work at: Wed Jul 29 17:27:13 2026
+[17:27:13] libhb: work result = 0
+Encode done!
+HandBrake has exited.

@@ -8,20 +8,25 @@ the fake one in Phase 3+ — the request/poll pattern stays the same.
 """
 import time
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 import drive
+import handbrake
 import jobs
 import plex
 
-app = Flask(__name__)
-
+# templates/static live in ../frontend, not the default ./templates
+# next to this file - point Flask at the right place explicitly.
+app = Flask(
+    __name__,
+    template_folder="../frontend/templates",
+    static_folder="../frontend/static",
+)
 
 @app.route("/")
 def index():
-    """Placeholder home route — will become the dashboard in Phase 5."""
-    return "Disc Ripper GUI is running. (Phase 0 — no functionality yet.)"
-
+    """Phase 5: the real dashboard page."""
+    return render_template("index.html")
 
 @app.route("/api/health")
 def health():
@@ -182,9 +187,46 @@ def stats():
         free_space_gb=free_space_gb,
         recent_activity=jobs.get_history(limit=5),
     )
+@app.route("/api/scan", methods=["POST"])
+def scan_disc():
+    """
+    Phase 5: run a real disc scan and return the main feature's info
+    (duration, audio/subtitle tracks) so the dashboard can show a
+    track picker before starting a rip.
+
+    This can take anywhere from ~10 seconds to ~60 seconds depending
+    on the disc (see DEVLOG.md) - that's why threaded=True matters for
+    the dev server, and why this is a manual "Scan Disc" button rather
+    than something that runs automatically on every page load.
+    """
+    import subprocess as scan_subprocess
+
+    wake_result = drive.wake_drive()
+    if not wake_result["success"]:
+        return jsonify(error="Could not wake drive: " + wake_result["output"]), 502
+
+    scan_result = scan_subprocess.run(
+        ["HandBrakeCLI", "-i", "/dev/sr0", "-t", "0", "--scan", "--json"],
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
+
+    try:
+        summary = handbrake.parse_scan_output(scan_result.stdout)
+    except handbrake.ScanParseError as e:
+        return jsonify(error="Scan failed: " + str(e)), 502
+
+    return jsonify(success=True, **summary)
+
 if __name__ == "__main__":
     # debug=True gives auto-reload + a debugger during development.
     # host="0.0.0.0" so it's reachable over the LAN/Tailscale, not just
     # localhost on the Pi itself — matters since this needs to be
     # reachable remotely per the project brief.
-    app.run(host="0.0.0.0", port=5000, debug=True)
+
+    # threaded=True: without this, Flask's dev server handles one
+    # request at a time - a slow disc scan (can take up to ~60s, see
+    # DEVLOG.md) would freeze the dashboard's live status polling for
+    # its whole duration. threaded=True lets requests run concurrently.
+    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True)

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disc Ripper</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">DISC RIPPER</h1>
+    <div class="drive-led" id="drive-led">
+      <span class="drive-led__dot" id="drive-led-dot"></span>
+      <span class="drive-led__label" id="drive-led-label">DRIVE: --</span>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <section class="card current-job">
+      <h2 class="card__title">CURRENT JOB</h2>
+      <p class="current-job__title" id="job-title">No job running</p>
+      <div class="level-meter">
+        <div class="level-meter__fill" id="progress-fill"></div>
+      </div>
+      <div class="current-job__readouts">
+        <span id="progress-percent">--%</span>
+        <span id="job-eta">ETA --</span>
+        <span id="job-rate">-- fps</span>
+      </div>
+      <div class="current-job__controls">
+        <button id="wake-btn" class="btn btn--amber">WAKE DRIVE</button>
+        <button id="eject-btn" class="btn btn--outline">EJECT</button>
+      </div>
+      <p class="current-job__message" id="drive-message"></p>
+    </section>
+
+    <section class="stats-row">
+      <div class="stat-tile">
+        <span class="stat-tile__label">DRIVE</span>
+        <span class="stat-tile__value" id="stat-drive-status">--</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-tile__label">RIPPED TODAY</span>
+        <span class="stat-tile__value" id="stat-ripped-today">--</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-tile__label">FREE SPACE</span>
+        <span class="stat-tile__value" id="stat-free-space">--</span>
+      </div>
+    </section>
+
+    <section class="card start-rip">
+      <h2 class="card__title">START NEW RIP</h2>
+      <button id="scan-btn" class="btn btn--amber">SCAN DISC</button>
+      <div id="scan-result" class="scan-result" style="display:none;">
+        <p id="scan-summary" class="scan-result__summary"></p>
+        <label class="form-field">
+          Movie Title
+          <input type="text" id="movie-title-input" placeholder="e.g. Batman Begins">
+        </label>
+        <label class="form-field">
+          Year
+          <input type="number" id="movie-year-input" placeholder="e.g. 2005">
+        </label>
+        <label class="form-field">
+          Audio Track
+          <select id="audio-track-select"></select>
+        </label>
+        <label class="form-field">
+          Subtitle Track
+          <select id="sub-track-select">
+            <option value="">None</option>
+          </select>
+        </label>
+        <button id="start-rip-btn" class="btn btn--amber">START RIP</button>
+      </div>
+      <p id="scan-message" class="current-job__message"></p>
+    </section>
+
+    <section class="card recent-activity">
+      <h2 class="card__title">RECENT ACTIVITY</h2>
+      <ul class="activity-list" id="activity-list">
+        <li class="activity-list__empty">No rips yet</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

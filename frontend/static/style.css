@@ -1,0 +1,317 @@
+/* ============================================================
+   Disc Ripper GUI - dashboard styles
+   Phase 5.
+
+   Design direction: this dashboard controls a real physical optical
+   drive, so the visual language borrows from old AV equipment (tape
+   decks, receivers) rather than a generic SaaS look - amber LED-style
+   readouts, monospace numbers, a segmented level-meter progress bar
+   instead of a smooth gradient one.
+
+   No external fonts - this runs over a home WiFi connection with
+   known packet loss (see project brief), so we use the system font
+   stack only. One less thing that can fail to load.
+   ============================================================ */
+
+:root {
+  /* Color tokens */
+  --bg-deep: #1B1A18;
+  --bg-panel: #242220;
+  --text-primary: #EDE7DD;
+  --text-muted: #9C948A;
+  --accent-amber: #FFB000;
+  --accent-green: #5FBF8F;
+  --accent-red: #E85D4C;
+  --border-line: #3A3733;
+
+  /* Type tokens */
+  --font-label: -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-data: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-label);
+  padding: 24px;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ---- Header ---- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 640px;
+  margin: 0 auto 24px auto;
+}
+
+.header__title {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+
+.drive-led {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-data);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* The LED dot itself - color set dynamically via JS by swapping
+   these modifier classes based on drive/job state. */
+.drive-led__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  display: inline-block;
+}
+
+.drive-led__dot--idle { background: var(--text-muted); }
+.drive-led__dot--busy { background: var(--accent-amber); box-shadow: 0 0 6px var(--accent-amber); }
+.drive-led__dot--error { background: var(--accent-red); box-shadow: 0 0 6px var(--accent-red); }
+
+/* ---- Shared card style ---- */
+
+.card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-line);
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 640px;
+  margin: 0 auto 16px auto;
+}
+
+.card__title {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* ---- Current job card ---- */
+
+.current-job__title {
+  font-size: 1.1rem;
+  margin: 0 0 14px 0;
+}
+
+/* The signature element: a segmented level-meter bar, like an old
+   tape deck's VU meter, instead of a smooth gradient progress bar.
+   Built with repeating-linear-gradient so it reads as discrete
+   blocks rather than one continuous fill. */
+.level-meter {
+  height: 28px;
+  background: var(--bg-deep);
+  border: 1px solid var(--border-line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.level-meter__fill {
+  height: 100%;
+  width: 0%;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent-amber) 0px,
+    var(--accent-amber) 14px,
+    var(--bg-deep) 14px,
+    var(--bg-deep) 18px
+  );
+  transition: width 0.4s ease;
+}
+
+.level-meter__fill--done {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent-green) 0px,
+    var(--accent-green) 14px,
+    var(--bg-deep) 14px,
+    var(--bg-deep) 18px
+  );
+}
+
+.current-job__readouts {
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-data);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 10px 0 18px 0;
+}
+
+.current-job__controls {
+  display: flex;
+  gap: 12px;
+}
+
+.current-job__message {
+  font-family: var(--font-data);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 10px 0 0 0;
+  min-height: 1em;
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: 1px solid var(--border-line);
+  cursor: pointer;
+}
+
+.btn--amber {
+  background: var(--accent-amber);
+  color: var(--bg-deep);
+  border-color: var(--accent-amber);
+  font-weight: 600;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 2px;
+}
+
+/* ---- Quick stats row ---- */
+
+.stats-row {
+  display: flex;
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 auto 16px auto;
+}
+
+.stat-tile {
+  flex: 1;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-line);
+  border-radius: 6px;
+  padding: 14px;
+  text-align: center;
+}
+
+.stat-tile__label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.stat-tile__value {
+  display: block;
+  font-family: var(--font-data);
+  font-size: 1.1rem;
+  color: var(--accent-amber);
+}
+
+/* ---- Recent activity list ---- */
+
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-line);
+  font-size: 0.9rem;
+}
+
+.activity-list li:last-child {
+  border-bottom: none;
+}
+
+.activity-list__duration {
+  font-family: var(--font-data);
+  color: var(--text-muted);
+}
+
+.activity-list__empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---- Mobile ---- */
+
+@media (max-width: 480px) {
+  .stats-row {
+    flex-direction: column;
+  }
+
+  .current-job__readouts {
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+}
+
+/* ---- Start new rip form ---- */
+
+.start-rip .btn {
+  margin-bottom: 12px;
+}
+
+.scan-result__summary {
+  font-family: var(--font-data);
+  color: var(--accent-amber);
+  margin: 0 0 14px 0;
+}
+
+.form-field {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form-field input,
+.form-field select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 10px;
+  background: var(--bg-deep);
+  border: 1px solid var(--border-line);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-family: var(--font-label);
+  font-size: 0.9rem;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 1px;
+}

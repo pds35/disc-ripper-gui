@@ -3,6 +3,72 @@
 Newest entry on top. One entry per work session, not per commit. See
 `BUILD-PROCESS.md` §3 for the format this follows.
 
+
+## 2026-07-30 - Phase 5 complete: real dashboard UI, wired to the backend
+
+Built the actual dashboard from the brief's mockup description (no
+image was ever checked in, only a TODO note - worked from the written
+spec instead: current job card with progress/ETA/wake/eject, quick
+stats row, recent activity list).
+
+Design direction: since this controls real physical hardware (a
+spinning optical drive), went with an AV-equipment aesthetic instead
+of a generic SaaS dashboard look - dark chassis background, amber
+LED/VFD-style readouts, monospace for all numeric data. Signature
+element: a segmented level-meter progress bar (like an old tape deck
+VU meter) instead of a smooth gradient bar, amber while running and
+green when done. No external font CDN - this runs over flaky home
+WiFi (per the brief), so system fonts only.
+
+Backend additions needed first: jobs.py had no history, only current
+job state - added _job_history (in-memory list) and get_history(),
+plus movie_title/movie_year tracking on the job so the dashboard can
+show real movie names, not just "running". Added /api/stats
+(drive status, discs ripped today, free space via shutil.disk_usage,
+recent activity) and /api/scan (runs a real disc scan, returns main
+feature duration + audio/subtitle tracks for a track-picker UI).
+Enabled threaded=True on the Flask dev server, since a scan can take
+up to ~60 seconds and would otherwise freeze the dashboard's live
+polling for its whole duration.
+
+Found and fixed a real bug while wiring this up: an earlier edit
+meant to add movie_title/movie_year passthrough landed in the WRONG
+route (the old leftover /api/jobs/start_rip test route from Phase 3)
+instead of the real /api/rip/start route, because both routes called
+jobs.start_rip_job() with similar-looking code and a find-and-replace
+matched the wrong one. Fixed by deleting the obsolete test route
+entirely (no longer needed now that the real route exists) and adding
+the passthrough to the correct one. Caught via testing, not by
+inspection - the dashboard showed movie_title as null despite passing
+it in, which is what led to checking.
+
+Frontend built as three vanilla files (index.html, style.css, app.js)
+- no build step, no framework, matching the project's beginner-focused
+"clear code over cleverness" goal. Had two large-paste failures again
+today (a stuck heredoc, and app.js truncating around 100 lines in) -
+splitting into smaller chunks (roughly 30-100 lines each) and
+verifying line counts after every piece worked reliably, same lesson
+as previous sessions.
+
+Tested for real, fully end-to-end through the actual browser: clicked
+Wake Drive (worked, though it also triggers the desktop's own udisks2
+autoplay dialog - unrelated to our app, just dismiss it), clicked Scan
+Disc against the real Pirates disc (correctly showed 2:48 duration, 1
+audio track, no subtitles - matches what we already knew about this
+disc), filled in the start-rip form, clicked Start Rip, and watched
+the dashboard show real live progress (title, percent, ETA, encoding
+rate) updating every 2 seconds from an actual running HandBrake
+process. This is the real proof Phase 5 works - not curl commands,
+the actual dashboard a person would use.
+
+Full test suite: still 15 passing (no backend logic changed, only
+additions). Committed and tagged v0.5-dashboard.
+
+Next: Phase 6 - abcde/CD audio ripping path. Also worth considering:
+a cancel-job button (currently once a rip starts there's no way to
+stop it from the UI), and persisting job history to SQLite instead of
+in-memory (currently lost on every app restart/reload).
+
 ---
 ## 2026-07-30 - Phase 4 complete: rip to correct Plex path, ownership, real end-to-end test
 

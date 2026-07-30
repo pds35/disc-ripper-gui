@@ -146,3 +146,93 @@ def parse_scan_output(scan_stdout):
     summary["title_count"] = len(title_set.get("TitleList", []))
     return summary
 
+
+
+def iter_progress_blocks(lines):
+    """
+    Given an iterable of text lines (a live subprocess stdout stream,
+    or a fixture file opened in text mode), yields each parsed
+    "Progress: {...}" block as a dict, as soon as it's complete.
+
+    Works incrementally, one line at a time - this is what makes it
+    usable against a LIVE running rip, not just a finished log file.
+    A block starts at a line that is exactly "Progress: {" and ends
+    at a line that is exactly "}" with no leading whitespace (the
+    closing brace of the top-level object - nested braces are always
+    indented, so this is an unambiguous marker).
+
+    Malformed blocks (shouldn't happen with split stdout/stderr, but
+    just in case) are silently skipped rather than crashing the whole
+    stream - one bad progress update isn't worth losing the job over.
+    """
+    in_block = False
+    buffer = []
+    for raw_line in lines:
+        line = raw_line.rstrip("\n")
+        if not in_block:
+            if line == "Progress: {":
+                in_block = True
+                buffer = ["{"]
+            continue
+
+        buffer.append(line)
+        if line == "}":
+            block_text = "\n".join(buffer)
+            try:
+                yield json.loads(block_text)
+            except json.JSONDecodeError:
+                pass
+            in_block = False
+            buffer = []
+
+
+def summarize_progress(block):
+    """
+    Turn one raw Progress block dict into a flat, frontend-friendly
+    summary. Handles all three states seen in real HandBrake output:
+    SCANNING, WORKING, WORKDONE.
+
+    Returns:
+        {
+            "state": "scanning" | "working" | "done" | "error",
+            "percent": float or None,
+            "eta_seconds": int or None,
+            "rate_fps": float or None,
+        }
+    """
+    state = block.get("State")
+
+    if state == "WORKING":
+        working = block.get("Working", {})
+        return {
+            "state": "working",
+            "percent": round(working.get("Progress", 0) * 100, 1),
+            "eta_seconds": working.get("ETASeconds"),
+            "rate_fps": working.get("Rate"),
+        }
+
+    if state == "WORKDONE":
+        work_done = block.get("WorkDone", {})
+        error_code = work_done.get("Error", 0)
+        return {
+            "state": "done" if error_code == 0 else "error",
+            "percent": 100.0 if error_code == 0 else None,
+            "eta_seconds": None,
+            "rate_fps": None,
+        }
+
+    if state == "SCANNING":
+        return {
+            "state": "scanning",
+            "percent": None,
+            "eta_seconds": None,
+            "rate_fps": None,
+        }
+
+    return {
+        "state": (state or "unknown").lower(),
+        "percent": None,
+        "eta_seconds": None,
+        "rate_fps": None,
+    }
+

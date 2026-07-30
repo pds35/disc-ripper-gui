@@ -1,0 +1,2145 @@
+Version: {
+    "Arch": "aarch64",
+    "Name": "HandBrake",
+    "Official": true,
+    "RepoDate": "2025-02-20 18:37:15",
+    "RepoHash": "e117cfe7fca37abeec59ea4201e5d93ed7477746",
+    "System": "Linux",
+    "Type": "release",
+    "Version": {
+        "Major": 1,
+        "Minor": 9,
+        "Point": 2
+    },
+    "VersionString": "1.9.2"
+}
+libdvdnav: DVD Title: BATMAN_BEGINS_DISC_1
+libdvdnav: DVD Serial Number: 3321B987
+libdvdnav: DVD Title (Alternative): BATMAN_BEGINS_DISC_1
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000130
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000007b8
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x0002306d
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00364583
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00364661
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_03_1.VOB at 0x00377c77
+libdvdread: Elapsed time 0
+libdvdread: Found 3 VTS's
+libdvdread: Elapsed time 0
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.10000000149011612,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 3,
+        "PreviewCount": 10,
+        "Progress": 0.30000001192092896,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 4,
+        "PreviewCount": 10,
+        "Progress": 0.40000000596046448,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 6,
+        "PreviewCount": 10,
+        "Progress": 0.60000002384185791,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 7,
+        "PreviewCount": 10,
+        "Progress": 0.69999998807907104,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 9,
+        "PreviewCount": 10,
+        "Progress": 0.89999997615814209,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 10,
+        "PreviewCount": 10,
+        "Progress": 1.0,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+libdvdnav: DVD Title: BATMAN_BEGINS_DISC_1
+libdvdnav: DVD Serial Number: 3321B987
+libdvdnav: DVD Title (Alternative): BATMAN_BEGINS_DISC_1
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000130
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000007b8
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x0002306d
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00364583
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00364661
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_03_1.VOB at 0x00377c77
+libdvdread: Elapsed time 0
+libdvdread: Found 3 VTS's
+libdvdread: Elapsed time 0
+libdvdnav: DVD disk reports itself with Region mask 0x00e50000. Regions: 02 04 05
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.0,
+        "Rate": 0.0,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.0008791208965703845,
+        "Rate": 0.0,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.0074725276790559292,
+        "Rate": 0.0,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.014065934345126152,
+        "Rate": 0.0,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.020659340545535088,
+        "Rate": 0.0,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.027252746745944023,
+        "Rate": 2.688442357623444e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.033846154808998108,
+        "Rate": 2.688442357623444e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.042637363076210022,
+        "Rate": 2.688442357623444e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.053626373410224915,
+        "Rate": 2.688442357623444e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.06021977961063385,
+        "Rate": 6.8891338855792128e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.066813185811042786,
+        "Rate": 6.8891338855792128e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.073406592011451721,
+        "Rate": 6.8891338855792128e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.08263736218214035,
+        "Rate": 6.8891338855792128e-8,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.093186810612678528,
+        "Rate": 56.014152526855469,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 0,
+        "Hours": -1,
+        "Minutes": -1,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.1063736230134964,
+        "Rate": 56.014152526855469,
+        "RateAvg": 0.0,
+        "Seconds": -1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 37,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.11472527682781219,
+        "Rate": 56.014152526855469,
+        "RateAvg": 56.014152526855469,
+        "Seconds": 37,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 32,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.12791208922863007,
+        "Rate": 69.6163330078125,
+        "RateAvg": 61.820652008056641,
+        "Seconds": 32,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 32,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.13934065401554108,
+        "Rate": 69.6163330078125,
+        "RateAvg": 61.820652008056641,
+        "Seconds": 32,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 32,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.15252746641635895,
+        "Rate": 69.6163330078125,
+        "RateAvg": 61.820652008056641,
+        "Seconds": 32,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 32,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.15912087261676788,
+        "Rate": 69.6163330078125,
+        "RateAvg": 61.820652008056641,
+        "Seconds": 32,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 29,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.16835165023803711,
+        "Rate": 76.481834411621094,
+        "RateAvg": 65.772781372070312,
+        "Seconds": 29,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 29,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.17890110611915588,
+        "Rate": 76.481834411621094,
+        "RateAvg": 65.772781372070312,
+        "Seconds": 29,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 29,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.18549451231956482,
+        "Rate": 76.481834411621094,
+        "RateAvg": 65.772781372070312,
+        "Seconds": 29,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 28,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.19208791851997375,
+        "Rate": 74.085853576660156,
+        "RateAvg": 64.708580017089844,
+        "Seconds": 28,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 28,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.2043956071138382,
+        "Rate": 74.085853576660156,
+        "RateAvg": 64.708580017089844,
+        "Seconds": 28,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 28,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.21186813712120056,
+        "Rate": 74.085853576660156,
+        "RateAvg": 64.708580017089844,
+        "Seconds": 28,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 28,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.2184615433216095,
+        "Rate": 74.085853576660156,
+        "RateAvg": 64.708580017089844,
+        "Seconds": 28,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 27,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.22505494952201843,
+        "Rate": 69.702598571777344,
+        "RateAvg": 65.149139404296875,
+        "Seconds": 27,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 27,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.23164835572242737,
+        "Rate": 69.702598571777344,
+        "RateAvg": 65.149139404296875,
+        "Seconds": 27,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 27,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.24351648986339569,
+        "Rate": 69.702598571777344,
+        "RateAvg": 65.149139404296875,
+        "Seconds": 27,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 25,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.25186812877655029,
+        "Rate": 65.015480041503906,
+        "RateAvg": 65.493202209472656,
+        "Seconds": 25,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 25,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.26593407988548279,
+        "Rate": 65.015480041503906,
+        "RateAvg": 65.493202209472656,
+        "Seconds": 25,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 25,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.28219780325889587,
+        "Rate": 65.015480041503906,
+        "RateAvg": 65.493202209472656,
+        "Seconds": 25,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 25,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.28835165500640869,
+        "Rate": 65.015480041503906,
+        "RateAvg": 65.493202209472656,
+        "Seconds": 25,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 23,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.30285713076591492,
+        "Rate": 73.463272094726562,
+        "RateAvg": 67.666130065917969,
+        "Seconds": 23,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 23,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.31076923012733459,
+        "Rate": 73.463272094726562,
+        "RateAvg": 67.666130065917969,
+        "Seconds": 23,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 23,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.31736263632774353,
+        "Rate": 73.463272094726562,
+        "RateAvg": 67.666130065917969,
+        "Seconds": 23,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 23,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.32395604252815247,
+        "Rate": 73.463272094726562,
+        "RateAvg": 67.666130065917969,
+        "Seconds": 23,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 22,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.33714285492897034,
+        "Rate": 73.551948547363281,
+        "RateAvg": 67.662971496582031,
+        "Seconds": 22,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 22,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.34417581558227539,
+        "Rate": 73.551948547363281,
+        "RateAvg": 67.662971496582031,
+        "Seconds": 22,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 22,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.35252746939659119,
+        "Rate": 73.551948547363281,
+        "RateAvg": 67.662971496582031,
+        "Seconds": 22,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 21,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.36351647973060608,
+        "Rate": 74.789657592773438,
+        "RateAvg": 67.987960815429688,
+        "Seconds": 21,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 21,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.37010988593101501,
+        "Rate": 74.789657592773438,
+        "RateAvg": 67.987960815429688,
+        "Seconds": 21,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 21,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.37670329213142395,
+        "Rate": 74.789657592773438,
+        "RateAvg": 67.987960815429688,
+        "Seconds": 21,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.38725274801254272,
+        "Rate": 67.096771240234375,
+        "RateAvg": 67.530067443847656,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.3951648473739624,
+        "Rate": 67.096771240234375,
+        "RateAvg": 67.530067443847656,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.40307691693305969,
+        "Rate": 67.096771240234375,
+        "RateAvg": 67.530067443847656,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.40967032313346863,
+        "Rate": 67.096771240234375,
+        "RateAvg": 67.530067443847656,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.41626372933387756,
+        "Rate": 62.700965881347656,
+        "RateAvg": 66.562034606933594,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.42945054173469543,
+        "Rate": 62.700965881347656,
+        "RateAvg": 66.562034606933594,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.43604394793510437,
+        "Rate": 62.700965881347656,
+        "RateAvg": 66.562034606933594,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 20,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.44263735413551331,
+        "Rate": 62.700965881347656,
+        "RateAvg": 66.562034606933594,
+        "Seconds": 20,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.45274725556373596,
+        "Rate": 61.826251983642578,
+        "RateAvg": 66.701957702636719,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.45978021621704102,
+        "Rate": 61.826251983642578,
+        "RateAvg": 66.701957702636719,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.46725276112556458,
+        "Rate": 61.826251983642578,
+        "RateAvg": 66.701957702636719,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.47164836525917053,
+        "Rate": 62.400508880615234,
+        "RateAvg": 66.530128479003906,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.48527473211288452,
+        "Rate": 62.400508880615234,
+        "RateAvg": 66.530128479003906,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.49538460373878479,
+        "Rate": 62.400508880615234,
+        "RateAvg": 66.530128479003906,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 18,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.50153845548629761,
+        "Rate": 62.400508880615234,
+        "RateAvg": 66.530128479003906,
+        "Seconds": 18,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 17,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.5125274658203125,
+        "Rate": 65.537788391113281,
+        "RateAvg": 66.3721923828125,
+        "Seconds": 17,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 17,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.52043956518173218,
+        "Rate": 65.537788391113281,
+        "RateAvg": 66.3721923828125,
+        "Seconds": 17,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 17,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.52703297138214111,
+        "Rate": 65.537788391113281,
+        "RateAvg": 66.3721923828125,
+        "Seconds": 17,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 15,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.5375823974609375,
+        "Rate": 66.451614379882812,
+        "RateAvg": 66.659347534179688,
+        "Seconds": 15,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 15,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.54373627901077271,
+        "Rate": 66.451614379882812,
+        "RateAvg": 66.659347534179688,
+        "Seconds": 15,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 15,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.55604398250579834,
+        "Rate": 66.451614379882812,
+        "RateAvg": 66.659347534179688,
+        "Seconds": 15,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 14,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.5683516263961792,
+        "Rate": 67.871864318847656,
+        "RateAvg": 66.749717712402344,
+        "Seconds": 14,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 14,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.5745055079460144,
+        "Rate": 67.871864318847656,
+        "RateAvg": 66.749717712402344,
+        "Seconds": 14,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 14,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.58769232034683228,
+        "Rate": 67.871864318847656,
+        "RateAvg": 66.749717712402344,
+        "Seconds": 14,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 14,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.59780222177505493,
+        "Rate": 67.871864318847656,
+        "RateAvg": 66.749717712402344,
+        "Seconds": 14,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 13,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.60263735055923462,
+        "Rate": 69.945701599121094,
+        "RateAvg": 66.922355651855469,
+        "Seconds": 13,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 13,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.61494505405426025,
+        "Rate": 69.945701599121094,
+        "RateAvg": 66.922355651855469,
+        "Seconds": 13,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 13,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.6246153712272644,
+        "Rate": 69.945701599121094,
+        "RateAvg": 66.922355651855469,
+        "Seconds": 13,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 12,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.63736265897750854,
+        "Rate": 71.657066345214844,
+        "RateAvg": 67.391510009765625,
+        "Seconds": 12,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 12,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.64659339189529419,
+        "Rate": 71.657066345214844,
+        "RateAvg": 67.391510009765625,
+        "Seconds": 12,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 12,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.65450549125671387,
+        "Rate": 71.657066345214844,
+        "RateAvg": 67.391510009765625,
+        "Seconds": 12,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 12,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.6606593132019043,
+        "Rate": 71.657066345214844,
+        "RateAvg": 67.391510009765625,
+        "Seconds": 12,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 11,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.67164832353591919,
+        "Rate": 70.164146423339844,
+        "RateAvg": 67.223884582519531,
+        "Seconds": 11,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 11,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.68000000715255737,
+        "Rate": 70.164146423339844,
+        "RateAvg": 67.223884582519531,
+        "Seconds": 11,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 11,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.68659341335296631,
+        "Rate": 70.164146423339844,
+        "RateAvg": 67.223884582519531,
+        "Seconds": 11,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 10,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.69318681955337524,
+        "Rate": 69.40789794921875,
+        "RateAvg": 67.245582580566406,
+        "Seconds": 10,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 10,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.70593404769897461,
+        "Rate": 69.40789794921875,
+        "RateAvg": 67.245582580566406,
+        "Seconds": 10,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 10,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.71296703815460205,
+        "Rate": 69.40789794921875,
+        "RateAvg": 67.245582580566406,
+        "Seconds": 10,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 10,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.71956044435501099,
+        "Rate": 69.40789794921875,
+        "RateAvg": 67.245582580566406,
+        "Seconds": 10,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 9,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.73054945468902588,
+        "Rate": 64.350067138671875,
+        "RateAvg": 67.004829406738281,
+        "Seconds": 9,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 9,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.73802196979522705,
+        "Rate": 64.350067138671875,
+        "RateAvg": 67.004829406738281,
+        "Seconds": 9,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 9,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.74593406915664673,
+        "Rate": 64.350067138671875,
+        "RateAvg": 67.004829406738281,
+        "Seconds": 9,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 8,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.75252747535705566,
+        "Rate": 65.0406494140625,
+        "RateAvg": 66.960075378417969,
+        "Seconds": 8,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 8,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.76175826787948608,
+        "Rate": 65.0406494140625,
+        "RateAvg": 66.960075378417969,
+        "Seconds": 8,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 8,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.77230769395828247,
+        "Rate": 65.0406494140625,
+        "RateAvg": 66.960075378417969,
+        "Seconds": 8,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 7,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.77890110015869141,
+        "Rate": 63.760574340820312,
+        "RateAvg": 66.840576171875,
+        "Seconds": 7,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 7,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.7903296947479248,
+        "Rate": 63.760574340820312,
+        "RateAvg": 66.840576171875,
+        "Seconds": 7,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 7,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.79604393243789673,
+        "Rate": 63.760574340820312,
+        "RateAvg": 66.840576171875,
+        "Seconds": 7,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 7,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.80527472496032715,
+        "Rate": 63.760574340820312,
+        "RateAvg": 66.840576171875,
+        "Seconds": 7,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 6,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.81890112161636353,
+        "Rate": 63.683868408203125,
+        "RateAvg": 66.635162353515625,
+        "Seconds": 6,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 6,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.82549452781677246,
+        "Rate": 63.683868408203125,
+        "RateAvg": 66.635162353515625,
+        "Seconds": 6,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 6,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.83648353815078735,
+        "Rate": 63.683868408203125,
+        "RateAvg": 66.635162353515625,
+        "Seconds": 6,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 5,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.84483516216278076,
+        "Rate": 65.009559631347656,
+        "RateAvg": 66.745956420898438,
+        "Seconds": 5,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 5,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.8514285683631897,
+        "Rate": 65.009559631347656,
+        "RateAvg": 66.745956420898438,
+        "Seconds": 5,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 5,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.85846155881881714,
+        "Rate": 65.009559631347656,
+        "RateAvg": 66.745956420898438,
+        "Seconds": 5,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 5,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.86989009380340576,
+        "Rate": 65.009559631347656,
+        "RateAvg": 66.745956420898438,
+        "Seconds": 5,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 4,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.87780219316482544,
+        "Rate": 64.99395751953125,
+        "RateAvg": 66.635307312011719,
+        "Seconds": 4,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 4,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.89098900556564331,
+        "Rate": 64.99395751953125,
+        "RateAvg": 66.635307312011719,
+        "Seconds": 4,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 4,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.90417581796646118,
+        "Rate": 64.99395751953125,
+        "RateAvg": 66.635307312011719,
+        "Seconds": 4,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 2,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.91560441255569458,
+        "Rate": 76.544731140136719,
+        "RateAvg": 67.68310546875,
+        "Seconds": 2,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 2,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.92395603656768799,
+        "Rate": 76.544731140136719,
+        "RateAvg": 67.68310546875,
+        "Seconds": 2,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 2,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.93714284896850586,
+        "Rate": 76.544731140136719,
+        "RateAvg": 67.68310546875,
+        "Seconds": 2,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 2,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.95032966136932373,
+        "Rate": 76.544731140136719,
+        "RateAvg": 67.68310546875,
+        "Seconds": 2,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 1,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.95692306756973267,
+        "Rate": 78.996284484863281,
+        "RateAvg": 67.988937377929688,
+        "Seconds": 1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 1,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.97010987997055054,
+        "Rate": 78.996284484863281,
+        "RateAvg": 67.988937377929688,
+        "Seconds": 1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 1,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.98197799921035767,
+        "Rate": 78.996284484863281,
+        "RateAvg": 67.988937377929688,
+        "Seconds": 1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 1,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.9885714054107666,
+        "Rate": 78.996284484863281,
+        "RateAvg": 67.988937377929688,
+        "Seconds": 1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKING",
+    "Working": {
+        "ETASeconds": 1,
+        "Hours": 0,
+        "Minutes": 0,
+        "Pass": 1,
+        "PassCount": 1,
+        "PassID": 0,
+        "Paused": 0,
+        "Progress": 0.9885714054107666,
+        "Rate": 78.996284484863281,
+        "RateAvg": 67.988937377929688,
+        "Seconds": 1,
+        "SequenceID": 1
+    }
+}
+Progress: {
+    "State": "WORKDONE",
+    "WorkDone": {
+        "Error": 0,
+        "SequenceID": 1
+    }
+}
+

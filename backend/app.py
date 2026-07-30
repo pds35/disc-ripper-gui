@@ -49,6 +49,30 @@ def start_job():
         return jsonify(error="a job is already running"), 409
     return jsonify(message="fake job started"), 202
 
+@app.route("/api/jobs/start_rip", methods=["POST"])
+def start_rip():
+    """
+    Start a REAL HandBrakeCLI rip job (Phase 3 live progress test).
+
+    Hardcoded to a 90-second test clip for now (title 1, start-at 0,
+    stop-at 90) - this is a manual test route, not the real rip
+    endpoint the frontend will eventually use in Phase 4/5, which will
+    take title/track/output-path from the request body instead.
+    """
+    started = jobs.start_rip_job(
+        device="/dev/sr0",
+        title=1,
+        audio_track=1,
+        sub_track=1,
+        output_path="/tmp/test-clip-live.mkv",
+        stderr_log_path="/tmp/test-clip-live-stderr.log",
+        start_seconds=0,
+        stop_seconds=90,
+    )
+    if not started:
+        return jsonify(error="a job is already running"), 409
+    return jsonify(message="rip job started"), 202
+
 
 @app.route("/api/jobs/status")
 def job_status():

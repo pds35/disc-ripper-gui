@@ -5,6 +5,66 @@ Newest entry on top. One entry per work session, not per commit. See
 
 ---
 
+## 2026-07-30 - Phase 3 complete: live progress parsing from a real running rip
+
+Built the second half of Phase 3: live progress parsing, not just scan
+parsing. Captured a real 90-second test rip (title 1, --start-at
+duration:0 --stop-at duration:90, stdout/stderr split as usual) to see
+HandBrake's actual live progress JSON shape before writing any parser
+code - same approach that worked well for the scan JSON.
+
+Real shape confirmed: Progress blocks with State SCANNING, WORKING, or
+WORKDONE. WORKING blocks have a Progress field (0.0-1.0 float),
+ETASeconds, and Rate/RateAvg (encoding fps). WORKDONE has an Error
+code (0 = success). 112 WORKING updates came through for a 90-second
+clip - plenty of granularity for a real progress bar.
+
+Added to handbrake.py: iter_progress_blocks() is a generator that
+reads any line-iterable (a live subprocess stdout stream OR a fixture
+file - same function works for both, since Python file objects and
+Popen().stdout are both just line iterables) and yields each parsed
+Progress block as soon as its closing brace is seen. summarize_progress()
+turns one block into a flat state/percent/eta/rate summary. Verified
+against the real 90-second-clip fixture before touching jobs.py:
+correctly found all 129 real blocks (16 SCANNING, 112 WORKING, 1
+WORKDONE), progress climbing 0% to 98.9% then a clean 100% done state.
+
+Added start_rip_job() to jobs.py: launches HandBrakeCLI via Popen with
+stdout=PIPE (read live) and stderr redirected to a log file (NOT
+merged - same stream-separation lesson from the scan-parsing bug
+applies here too, and matters even more since a real rip runs for
+hours). A background thread iterates process.stdout through
+iter_progress_blocks() as lines arrive, updating the shared job-status
+dict on every block - this is what makes /api/jobs/status show real
+moving progress instead of just "running" until it's suddenly "done".
+
+Tested for real, end to end, through the actual API (not just unit
+tests): started a live 90-second test rip via curl, polled
+/api/jobs/status five times a couple seconds apart, watched percent
+climb 9.6% - 28.2% - 43.3% - 57.1% - 67.3% with ETA counting down and
+a real encoding rate reported each time, then confirmed a clean finish
+(state done, percent 100.0, returncode 0) and a real 20MB .mkv file on
+disk. This is the architecturally riskiest piece of the whole project
+(per BUILD-PROCESS.md's phase ordering) and it works.
+
+Side note: the test disc's libdvdnav title string reports
+"BATMAN_BEGINS_DISC_1", not The Dark Knight - the disc in the case
+labeled Dark Knight Disc 1 is actually Batman Begins. Doesn't affect
+any of the code (title/duration/track logic is disc-agnostic) but
+worth sorting out the physical disc mislabeling before relying on
+this case for future testing.
+
+Also continued the incremental build approach from last session
+(small pastes, syntax check + functional test after each piece) -
+worked smoothly this time with no stuck-heredoc or truncation issues.
+
+Committed as: handbrake.py progress functions, jobs.py real rip
+runner, app.py test route, plus the new rip-progress-stdout.log /
+rip-progress-stderr.log fixtures. Tagged v0.3-handbrake.
+
+Next: Phase 4 - rip to the correct Plex path/naming/ownership,
+end-to-end for one full disc (not just a 90-second test clip).
+
 ## 2026-07-30 - Phase 3: HandBrake scan-JSON parser, built and tested incrementally
 
 Built handbrake.py in small, individually-verified chunks (syntax

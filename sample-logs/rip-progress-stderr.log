@@ -1,0 +1,730 @@
+[15:07:18] Compile-time hardening features are enabled
+Cannot load libnvidia-encode.so.1
+[15:07:18] hb_init: starting libhb thread
+[15:07:18] thread 7fff5c94e620 started ("libhb")
+HandBrake 1.9.2 (2025041100) - Linux aarch64 - https://handbrake.fr
+4 CPUs detected
+Opening /dev/sr0...
+[15:07:18] CPU: Unknown
+[15:07:18]  - logical processor count: 4
+[15:07:18] hb_scan: path=/dev/sr0, title_index=1
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+[15:07:19] bd: not a bd - trying as a stream/file instead
+[15:07:19] dvd: Region mask 0xfd
+[15:07:19] scan: DVD has 10 title(s)
+[15:07:19] scan: scanning title 1
+[15:07:19] scan: duration is 02:14:17 (8057320 ms)
+[15:07:19] pgc_id: 1, pgn: 1: pgc: 0x7fff5002de00
+[15:07:19] scan: checking audio 1
+[15:07:19] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[15:07:19] scan: checking audio 2
+[15:07:19] scan: id=0x81bd, lang=Deutsch (AC3), 3cc=deu ext=0
+[15:07:19] scan: checking audio 3
+[15:07:19] scan: audio channel is not active
+[15:07:19] scan: checking subtitle 1
+[15:07:19] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[15:07:19] scan: checking subtitle 2
+[15:07:19] scan: id=0x21bd, lang=العربية (Wide Screen) [VOBSUB], 3cc=ara ext=0
+[15:07:19] scan: checking subtitle 3
+[15:07:19] scan: id=0x22bd, lang=Deutsch (Wide Screen) [VOBSUB], 3cc=deu ext=0
+[15:07:19] scan: checking subtitle 4
+[15:07:19] scan: id=0x23bd, lang=עברית (Wide Screen) [VOBSUB], 3cc=heb ext=0
+[15:07:19] scan: checking subtitle 5
+[15:07:19] scan: id=0x24bd, lang=íslenska (Wide Screen) [VOBSUB], 3cc=isl ext=0
+[15:07:19] scan: checking subtitle 6
+[15:07:19] scan: id=0x25bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=1
+[15:07:19] scan: checking subtitle 7
+[15:07:19] scan: id=0x26bd, lang=Deutsch (Wide Screen) [VOBSUB], 3cc=deu ext=1
+[15:07:19] scan: checking subtitle 8
+[15:07:19] scan: id=0x27bd, lang=Deutsch (Wide Screen) [VOBSUB], 3cc=deu ext=0
+[15:07:19] scan: title 1 has 40 chapters
+[15:07:19] scan: chap 1, 209480 ms
+[15:07:19] scan: chap 2, 222480 ms
+[15:07:19] scan: chap 3, 232840 ms
+[15:07:19] scan: chap 4, 270040 ms
+[15:07:19] scan: chap 5, 200200 ms
+[15:07:19] scan: chap 6, 263760 ms
+[15:07:19] scan: chap 7, 235360 ms
+[15:07:19] scan: chap 8, 173120 ms
+[15:07:19] scan: chap 9, 257520 ms
+[15:07:19] scan: chap 10, 144600 ms
+[15:07:19] scan: chap 11, 163040 ms
+[15:07:19] scan: chap 12, 108880 ms
+[15:07:19] scan: chap 13, 220320 ms
+[15:07:19] scan: chap 14, 159200 ms
+[15:07:19] scan: chap 15, 213120 ms
+[15:07:19] scan: chap 16, 142880 ms
+[15:07:19] scan: chap 17, 122000 ms
+[15:07:19] scan: chap 18, 316000 ms
+[15:07:19] scan: chap 19, 135440 ms
+[15:07:19] scan: chap 20, 158960 ms
+[15:07:19] scan: chap 21, 160200 ms
+[15:07:19] scan: chap 22, 109000 ms
+[15:07:19] scan: chap 23, 169480 ms
+[15:07:19] scan: chap 24, 205680 ms
+[15:07:19] scan: chap 25, 233680 ms
+[15:07:19] scan: chap 26, 295760 ms
+[15:07:19] scan: chap 27, 205240 ms
+[15:07:19] scan: chap 28, 299560 ms
+[15:07:19] scan: chap 29, 157920 ms
+[15:07:19] scan: chap 30, 264080 ms
+[15:07:19] scan: chap 31, 252280 ms
+[15:07:19] scan: chap 32, 112360 ms
+[15:07:19] scan: chap 33, 191560 ms
+[15:07:19] scan: chap 34, 193760 ms
+[15:07:19] scan: chap 35, 214840 ms
+[15:07:19] scan: chap 36, 178520 ms
+[15:07:19] scan: chap 37, 63000 ms
+[15:07:19] scan: chap 38, 183760 ms
+[15:07:19] scan: chap 39, 94720 ms
+[15:07:19] scan: chap 40, 522680 ms
+[15:07:19] scan: aspect = 16:9
+[15:07:19] scan: decoding previews for title 1
+[15:07:19] scan: title angle(s) 1
+[15:07:22] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=384000 Deutsch (AC3, 5.1 ch, 384 kbps)
+[15:07:22] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=384000 English (AC3, 5.1 ch, 384 kbps)
+[15:07:23] using bitstream PAR 64:45
+[15:07:23] scan: 10 previews, 720x576, 25.000 fps, autocrop = 74/74/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[15:07:24] libhb: scan thread found 1 valid title(s)
++ Using preset: Fast 1080p30
++ title 1:
+  + index 1
+  + duration: 02:14:17
+  + size: 720x576, pixel aspect: 64/45, display aspect: 1.78, 25.000 fps
+  + autocrop: 74/74/0/0
+  + chapters:
+    + 1: duration 00:03:29
+    + 2: duration 00:03:42
+    + 3: duration 00:03:53
+    + 4: duration 00:04:30
+    + 5: duration 00:03:20
+    + 6: duration 00:04:24
+    + 7: duration 00:03:55
+    + 8: duration 00:02:53
+    + 9: duration 00:04:18
+    + 10: duration 00:02:25
+    + 11: duration 00:02:43
+    + 12: duration 00:01:49
+    + 13: duration 00:03:40
+    + 14: duration 00:02:39
+    + 15: duration 00:03:33
+    + 16: duration 00:02:23
+    + 17: duration 00:02:02
+    + 18: duration 00:05:16
+    + 19: duration 00:02:15
+    + 20: duration 00:02:39
+    + 21: duration 00:02:40
+    + 22: duration 00:01:49
+    + 23: duration 00:02:49
+    + 24: duration 00:03:26
+    + 25: duration 00:03:54
+    + 26: duration 00:04:56
+    + 27: duration 00:03:25
+    + 28: duration 00:05:00
+    + 29: duration 00:02:38
+    + 30: duration 00:04:24
+    + 31: duration 00:04:12
+    + 32: duration 00:01:52
+    + 33: duration 00:03:12
+    + 34: duration 00:03:14
+    + 35: duration 00:03:35
+    + 36: duration 00:02:59
+    + 37: duration 00:01:03
+    + 38: duration 00:03:04
+    + 39: duration 00:01:35
+    + 40: duration 00:08:43
+  + audio tracks:
+    + 1, English (AC3, 5.1 ch, 384 kbps) (iso639-2: eng), 48000Hz, 384000bps
+    + 2, Deutsch (AC3, 5.1 ch, 384 kbps) (iso639-2: deu), 48000Hz, 384000bps
+  + subtitle tracks:
+    + 1, English (Wide Screen) [VOBSUB]
+    + 2, العربية (Wide Screen) [VOBSUB]
+    + 3, Deutsch (Wide Screen) [VOBSUB]
+    + 4, עברית (Wide Screen) [VOBSUB]
+    + 5, íslenska (Wide Screen) [VOBSUB]
+    + 6, English (Wide Screen) [VOBSUB]
+    + 7, Deutsch (Wide Screen) [VOBSUB]
+    + 8, Deutsch (Wide Screen) [VOBSUB]
+[15:07:24] Starting work at: Thu Jul 30 15:07:24 2026
+
+[15:07:24] 1 job(s) to process
+[15:07:24] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Encoder": 512,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": true,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 29,
+                    "Ticks": 18853200
+                },
+                "Name": "Chapter 1"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 42,
+                    "Ticks": 20023200
+                },
+                "Name": "Chapter 2"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 53,
+                    "Ticks": 20955600
+                },
+                "Name": "Chapter 3"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 30,
+                    "Ticks": 24303600
+                },
+                "Name": "Chapter 4"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 20,
+                    "Ticks": 18018000
+                },
+                "Name": "Chapter 5"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 24,
+                    "Ticks": 23738400
+                },
+                "Name": "Chapter 6"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 55,
+                    "Ticks": 21182400
+                },
+                "Name": "Chapter 7"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 53,
+                    "Ticks": 15580800
+                },
+                "Name": "Chapter 8"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 18,
+                    "Ticks": 23176800
+                },
+                "Name": "Chapter 9"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 25,
+                    "Ticks": 13014000
+                },
+                "Name": "Chapter 10"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 43,
+                    "Ticks": 14673600
+                },
+                "Name": "Chapter 11"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 1,
+                    "Seconds": 49,
+                    "Ticks": 9799200
+                },
+                "Name": "Chapter 12"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 40,
+                    "Ticks": 19828800
+                },
+                "Name": "Chapter 13"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 39,
+                    "Ticks": 14328000
+                },
+                "Name": "Chapter 14"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 33,
+                    "Ticks": 19180800
+                },
+                "Name": "Chapter 15"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 23,
+                    "Ticks": 12859200
+                },
+                "Name": "Chapter 16"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 2,
+                    "Ticks": 10980000
+                },
+                "Name": "Chapter 17"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 5,
+                    "Seconds": 16,
+                    "Ticks": 28440000
+                },
+                "Name": "Chapter 18"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 15,
+                    "Ticks": 12189600
+                },
+                "Name": "Chapter 19"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 39,
+                    "Ticks": 14306400
+                },
+                "Name": "Chapter 20"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 40,
+                    "Ticks": 14418000
+                },
+                "Name": "Chapter 21"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 1,
+                    "Seconds": 49,
+                    "Ticks": 9810000
+                },
+                "Name": "Chapter 22"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 49,
+                    "Ticks": 15253200
+                },
+                "Name": "Chapter 23"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 26,
+                    "Ticks": 18511200
+                },
+                "Name": "Chapter 24"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 54,
+                    "Ticks": 21031200
+                },
+                "Name": "Chapter 25"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 56,
+                    "Ticks": 26618400
+                },
+                "Name": "Chapter 26"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 25,
+                    "Ticks": 18471600
+                },
+                "Name": "Chapter 27"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 5,
+                    "Seconds": 0,
+                    "Ticks": 26960400
+                },
+                "Name": "Chapter 28"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 38,
+                    "Ticks": 14212800
+                },
+                "Name": "Chapter 29"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 24,
+                    "Ticks": 23767200
+                },
+                "Name": "Chapter 30"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 4,
+                    "Seconds": 12,
+                    "Ticks": 22705200
+                },
+                "Name": "Chapter 31"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 1,
+                    "Seconds": 52,
+                    "Ticks": 10112400
+                },
+                "Name": "Chapter 32"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 12,
+                    "Ticks": 17240400
+                },
+                "Name": "Chapter 33"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 14,
+                    "Ticks": 17438400
+                },
+                "Name": "Chapter 34"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 35,
+                    "Ticks": 19335600
+                },
+                "Name": "Chapter 35"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 59,
+                    "Ticks": 16066800
+                },
+                "Name": "Chapter 36"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 1,
+                    "Seconds": 3,
+                    "Ticks": 5670000
+                },
+                "Name": "Chapter 37"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 3,
+                    "Seconds": 4,
+                    "Ticks": 16538400
+                },
+                "Name": "Chapter 38"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 1,
+                    "Seconds": 35,
+                    "Ticks": 8524800
+                },
+                "Name": "Chapter 39"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 8,
+                    "Seconds": 43,
+                    "Ticks": 47041200
+                },
+                "Name": "Chapter 40"
+            }
+        ],
+        "ChapterMarkers": true,
+        "File": "/tmp/test-clip.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 74,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 74,
+                    "height": 428,
+                    "width": 720
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 45,
+        "Num": 64
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/dev/sr0",
+        "Range": {
+            "End": 8100000,
+            "Type": "time"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": [
+            {
+                "Burn": false,
+                "Default": false,
+                "Forced": false,
+                "Track": 0
+            }
+        ]
+    },
+    "Video": {
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 6,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 5,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "HardwareDecode": 0,
+        "Level": "4.0",
+        "MultiPass": false,
+        "Options": "",
+        "Preset": "fast",
+        "Profile": "main",
+        "QSV": {
+            "AdapterIndex": 0,
+            "AsyncDepth": 0,
+            "Decode": false
+        },
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[15:07:24] Starting Task: Encoding Pass
+[15:07:24] work: mixdown not specified, track 1 setting mixdown Dolby Pro Logic II
+[15:07:24] work: compression level not specified, track 1 setting compression level 2.00
+[15:07:24] work: bitrate not specified, track 1 setting bitrate 160 Kbps
+[15:07:24] job configuration:
+[15:07:24]  * source
+[15:07:24]    + /dev/sr0
+[15:07:24]    + title 1, start 00:00:00.00 stop 00:01:30.00
+[15:07:24]  * destination
+[15:07:24]    + /tmp/test-clip.mkv
+[15:07:24]    + container: Matroska (libavformat)
+[15:07:24]      + align initial A/V stream timestamps
+[15:07:24]      + chapter markers
+[15:07:24]  * video track
+[15:07:24]    + decoder: mpeg2video 8-bit (yuv420p)
+[15:07:24]      + bitrate 200 kbps
+[15:07:24]    + filters
+[15:07:24]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[15:07:24]      + Decomb (mode=39)
+[15:07:24]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[15:07:24]        + frame rate: 25.000 fps -> peak rate limited to 30.000 fps
+[15:07:24]      + Crop and Scale (width=720:height=428:crop-top=74:crop-bottom=74:crop-left=0:crop-right=0)
+[15:07:24]        + source: 720 * 576, crop (74/74/0/0): 720 * 428, scale: 720 * 428
+[15:07:24]    + Output geometry
+[15:07:24]      + storage dimensions: 720 x 428
+[15:07:24]      + pixel aspect ratio: 64 : 45
+[15:07:24]      + display dimensions: 1024 x 428
+[15:07:24]    + encoder: H.264 (libx264)
+[15:07:24]      + preset:  fast
+[15:07:24]      + profile: main
+[15:07:24]      + level:   4.0
+[15:07:24]      + quality: 22.00 (RF)
+[15:07:24]      + color profile: 5-1-6
+[15:07:24]      + color range: tv
+[15:07:24]      + chroma location: left
+[15:07:24]  * subtitle track 1, English (Wide Screen) [VOBSUB] (track 0, id 0x20bd, Picture) -> Passthru
+[15:07:24]  * audio track 1
+[15:07:24]    + decoder: English (AC3, 5.1 ch, 384 kbps) (track 1, id 0x80bd)
+[15:07:24]      + bitrate: 384 kbps, samplerate: 48000 Hz
+[15:07:24]    + mixdown: Dolby Pro Logic II
+[15:07:24]    + encoder: MP3 (libmp3lame)
+[15:07:24]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[15:07:24]      + compression level: 2.00
+[15:07:24] dvd: Region mask 0xfd
+[15:07:24] sync: expecting 2275 video frames
+[15:07:24] encx264: encoding at constant RF 22.000000
+[15:07:24] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=64/45
+x264 [info]: using cpu capabilities: ARMv8 NEON
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[15:07:24] sync: first pts video is 0
+[15:07:24] sync: first pts audio 0x80bd is 0
+[15:07:24] sync: "Chapter 1" (1) at frame 3 time 7200
+[15:07:41] sync: first pts subtitle 0x20bd is 4147920
+[15:07:44] [warning] decavsub: track 1, invalid PTS
+[15:07:57] sync: reached video pts 8100000, exiting early
+[15:07:57] sync: reached audio 0x80bd pts 8101440, exiting early
+[15:07:57] work: average encoding speed for job is 67.988937 fps
+[15:07:57] comb detect: heavy 130 | light 164 | uncombed 1956 | total 2250
+[15:07:57] decomb: deinterlaced 130 | blended 164 | unfiltered 1956 | total 2250
+[15:07:57] vfr: 2250 frames output, 0 dropped and 0 duped for CFR/PFR
+[15:07:57] vfr: lost time: 0 (0 frames)
+[15:07:57] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[15:07:58] ac3-decoder done: 2924 frames, 0 decoder errors
+[15:07:58] mpeg2video-decoder done: 2338 frames, 0 decoder errors
+[15:07:58] sync: got 2250 frames, 2275 expected
+[15:07:58] sync: framerate min 25.000 fps, max 25.000 fps, avg 25.000 fps
+[libmp3lame @ 0x7fff5024c480] Ignoring attempt to flush encoder that doesn't support it
+x264 [info]: frame I:47    Avg QP:19.43  size: 26554
+x264 [info]: frame P:1010  Avg QP:24.07  size: 11544
+x264 [info]: frame B:1193  Avg QP:24.96  size:  4524
+x264 [info]: consecutive B-frames: 27.2%  4.6%  5.1% 63.1%
+x264 [info]: mb I  I16..4: 36.1%  0.0% 63.9%
+x264 [info]: mb P  I16..4: 13.0%  0.0% 24.2%  P16..4: 27.9% 16.4%  6.4%  0.0%  0.0%    skip:12.2%
+x264 [info]: mb B  I16..4:  3.8%  0.0%  5.1%  B16..8: 24.0% 11.3%  1.7%  direct:11.3%  skip:42.8%  L0:35.9% L1:42.9% BI:21.2%
+x264 [info]: coded y,uvDC,uvAC intra: 63.5% 49.4% 14.8% inter: 24.5% 20.2% 0.5%
+x264 [info]: i16 v,h,dc,p: 35% 23% 11% 30%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 19% 18%  7%  7%  7%  6%  7%  6%
+x264 [info]: i8c dc,h,v,p: 68% 14% 13%  5%
+x264 [info]: Weighted P-Frames: Y:8.1% UV:1.4%
+x264 [info]: ref P L0: 72.5% 27.5%
+x264 [info]: ref B L0: 90.6%  9.4%
+x264 [info]: ref B L1: 97.2%  2.8%
+x264 [info]: kb/s:1627.13
+[15:07:58] mux: track 0, 2250 frames, 18303663 bytes, 1626.27 kbps, fifo 2048
+[15:07:58] mux: track 1, 3751 frames, 1800480 bytes, 159.97 kbps, fifo 4096
+[15:07:58] mux: track 2, 7 frames, 7308 bytes, 0.65 kbps, fifo 8
+[15:07:58] Finished work at: Thu Jul 30 15:07:58 2026
+
+[15:07:58] libhb: work result = 0
+
+Encode done!
+HandBrake has exited.

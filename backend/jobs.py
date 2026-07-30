@@ -48,7 +48,22 @@ _job_state = {
     "percent": None,        # 0-100, set once a real rip is running
     "eta_seconds": None,
     "rate_fps": None,
+    "movie_title": None,
+    "movie_year": None,
 }
+
+# Completed jobs, most recent first. In-memory only - lost on app
+# restart, same trade-off as _job_state (see module docstring). Good
+# enough for a single-user homelab dashboard; revisit with SQLite if
+# that ever becomes annoying.
+_job_history = []
+_history_lock = threading.Lock()
+
+
+def get_history(limit=10):
+    """Return the most recent completed jobs, most recent first."""
+    with _history_lock:
+        return list(_job_history[:limit])
 
 def get_status():
     """Return a snapshot of the current job's status."""
@@ -92,7 +107,8 @@ def start_fake_job(duration_seconds=30):
     return True
 
 def start_rip_job(device, title, audio_track, sub_track, output_path,
-                   stderr_log_path, start_seconds=None, stop_seconds=None):
+                   stderr_log_path, start_seconds=None, stop_seconds=None,
+                   movie_title=None, movie_year=None):
     """
     Start a real HandBrakeCLI rip job, with live progress parsing.
 
@@ -126,6 +142,8 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
         _job_state["percent"] = 0.0
         _job_state["eta_seconds"] = None
         _job_state["rate_fps"] = None
+        _job_state["movie_title"] = movie_title
+        _job_state["movie_year"] = movie_year
 
     def _run():
         with open(stderr_log_path, "w") as stderr_file:
@@ -174,6 +192,18 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
             _job_state["returncode"] = returncode
             if returncode == 0:
                 _job_state["percent"] = 100.0
+            history_entry = {
+                "movie_title": movie_title,
+                "movie_year": movie_year,
+                "output_path": output_path,
+                "state": _job_state["state"],
+                "started_at": _job_state["started_at"],
+                "finished_at": _job_state["finished_at"],
+                "duration_seconds": _job_state["finished_at"] - _job_state["started_at"],
+            }
+
+        with _history_lock:
+            _job_history.insert(0, history_entry)
 
     thread = threading.Thread(target=_run, daemon=True)
     thread.start()

@@ -51,31 +51,6 @@ def start_job():
         return jsonify(error="a job is already running"), 409
     return jsonify(message="fake job started"), 202
 
-@app.route("/api/jobs/start_rip", methods=["POST"])
-def start_rip():
-    """
-    Start a REAL HandBrakeCLI rip job (Phase 3 live progress test).
-
-    Hardcoded to a 90-second test clip for now (title 1, start-at 0,
-    stop-at 90) - this is a manual test route, not the real rip
-    endpoint the frontend will eventually use in Phase 4/5, which will
-    take title/track/output-path from the request body instead.
-    """
-    started = jobs.start_rip_job(
-        device="/dev/sr0",
-        title=1,
-        audio_track=1,
-        sub_track=1,
-        output_path="/tmp/test-clip-live.mkv",
-        stderr_log_path="/tmp/test-clip-live-stderr.log",
-        start_seconds=0,
-        stop_seconds=90,
-    )
-    if not started:
-        return jsonify(error="a job is already running"), 409
-    return jsonify(message="rip job started"), 202
-
-
 
 @app.route("/api/rip/start", methods=["POST"])
 def rip_start():
@@ -128,6 +103,8 @@ def rip_start():
         stderr_log_path=stderr_log_path,
         start_seconds=start_seconds,
         stop_seconds=stop_seconds,
+        movie_title=movie_title,
+        movie_year=movie_year,
     )
 
     if not started:
@@ -171,6 +148,40 @@ def eject_drive():
     return jsonify(result), status_code
 
 
+@app.route("/api/stats")
+def stats():
+    """
+    Quick stats + recent activity for the dashboard (Phase 5).
+
+    drive_status is a simplification for now: "busy" if a job is
+    running, "idle" otherwise. A real drive-presence check (is a disc
+    even in the tray) would need udev/lsusb work - worth revisiting
+    later, not needed for the dashboard to be useful today.
+    """
+    import shutil
+
+    job_status = jobs.get_status()
+    drive_status = "busy" if job_status["state"] == "running" else "idle"
+
+    history = jobs.get_history(limit=50)
+    today_start = time.time() - (time.time() % 86400)
+    discs_ripped_today = sum(
+        1 for entry in history
+        if entry["state"] == "done" and entry["finished_at"] >= today_start
+    )
+
+    try:
+        usage = shutil.disk_usage(plex.DEFAULT_MOVIES_BASE_DIR)
+        free_space_gb = round(usage.free / (1024 ** 3), 1)
+    except OSError:
+        free_space_gb = None
+
+    return jsonify(
+        drive_status=drive_status,
+        discs_ripped_today=discs_ripped_today,
+        free_space_gb=free_space_gb,
+        recent_activity=jobs.get_history(limit=5),
+    )
 if __name__ == "__main__":
     # debug=True gives auto-reload + a debugger during development.
     # host="0.0.0.0" so it's reachable over the LAN/Tailscale, not just

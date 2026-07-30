@@ -63,23 +63,33 @@ def extract_title_set_json(scan_stdout):
             "cause - see module docstring."
         ) from e
 
-
-
 def get_main_feature(title_set):
     """
     Given a parsed title-set dict (from extract_title_set_json), return
     just the title dict for the main feature (the movie itself).
 
+    Special case found via real testing: a disc with exactly one title
+    can report MainFeature as -1 (HandBrake apparently doesn't bother
+    flagging an obvious single-title disc). If there's only one title
+    on the disc, treat it as the main feature regardless of what
+    MainFeature says - there's nothing else it could be.
+
     Raises ScanParseError if "MainFeature" is missing, or if no title
-    in "TitleList" has a matching "Index".
+    in "TitleList" has a matching "Index" (and there isn't exactly one
+    title to fall back on).
     """
     if "MainFeature" not in title_set:
         raise ScanParseError("Scan JSON has no 'MainFeature' field.")
     if "TitleList" not in title_set:
         raise ScanParseError("Scan JSON has no 'TitleList' field.")
 
+    title_list = title_set["TitleList"]
+
+    if len(title_list) == 1:
+        return title_list[0]
+
     main_feature_index = title_set["MainFeature"]
-    for title in title_set["TitleList"]:
+    for title in title_list:
         if title.get("Index") == main_feature_index:
             return title
 
@@ -87,7 +97,6 @@ def get_main_feature(title_set):
         "MainFeature index " + str(main_feature_index) + " doesn't "
         "match any title's Index in TitleList."
     )
-
 
 
 def summarize_title(title):

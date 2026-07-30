@@ -98,7 +98,18 @@ def test_missing_marker_raises_clear_error():
 
 def test_main_feature_index_not_in_title_list():
     """If MainFeature points at an Index that doesn't exist, fail loudly."""
-    fake_title_set = {"MainFeature": 99, "TitleList": [{"Index": 1}]}
+    fake_title_set = {"MainFeature": 99, "TitleList": [{"Index": 1}, {"Index": 2}]}
     with pytest.raises(handbrake.ScanParseError):
         handbrake.get_main_feature(fake_title_set)
+
+
+def test_single_title_disc_used_as_main_feature_even_if_index_mismatches():
+    """
+    Real-world case found via testing (a Pirates of the Caribbean disc):
+    a disc with exactly one title can report MainFeature as -1. Since
+    there's only one title, it must be the main feature regardless.
+    """
+    fake_title_set = {"MainFeature": -1, "TitleList": [{"Index": 1, "Duration": {"Hours": 2, "Minutes": 48, "Seconds": 28}}]}
+    main = handbrake.get_main_feature(fake_title_set)
+    assert main["Index"] == 1
 

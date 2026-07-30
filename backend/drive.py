@@ -29,6 +29,11 @@ Design decisions:
   reliably clears the lock. New order: allow-removal+SCSI eject first
   (fast, no USB reset needed), soft eject second, full USB reset kept
   only as a genuine last resort for a truly wedged drive.
+- The USB unbind/rebind reset does NOT by itself physically open the
+  tray (confirmed via testing) — it only clears the drive's stuck
+  busy/locked state. A follow-up eject command is required after the
+  device node reappears; that retry's result, not the reset's exit
+  code, is what determines success for that step.
 - The USB port path ("1-2.3") is hardcoded per the brief, but the brief
   itself flags this needs reconfirming with `lsusb | grep -i apple` —
   it can change if the hub is plugged into a different port. Pulled out
@@ -119,19 +124,10 @@ def eject_drive():
     return {"success": False, "worked_step": None, "attempts": attempts}
 
 
-def _try_soft_eject():
-    """Step 2 (backup): sync, then standard forced eject. Rarely needed
-    now that step 1 handles the actual root cause, but kept as a cheap
-    fallback in case the allow-removal command itself fails for some
-    reason."""
-    subprocess.run(["sync"], timeout=COMMAND_TIMEOUT)
-    return _run(["sudo", "eject", "-f", DRIVE_DEVICE])
-
-
 def _try_allow_removal_and_scsi_eject():
     """
-    Step 1 (new primary path, confirmed against real hardware): first
-    send SCSI ALLOW MEDIUM REMOVAL, then the SCSI eject command.
+    Step 1 (primary path, confirmed against real hardware): first send
+    SCSI ALLOW MEDIUM REMOVAL, then the SCSI eject command.
 
     This was the actual fix discovered during testing — the drive kept
     refusing to eject with sense error "Medium removal prevented",
@@ -150,6 +146,15 @@ def _try_allow_removal_and_scsi_eject():
     )
     combined_output = f"allow_removal: {allow_output} | eject: {eject_output}"
     return eject_ok, combined_output
+
+
+def _try_soft_eject():
+    """Step 2 (backup): sync, then standard forced eject. Rarely needed
+    now that step 1 handles the actual root cause, but kept as a cheap
+    fallback in case the allow-removal command itself fails for some
+    reason."""
+    subprocess.run(["sync"], timeout=COMMAND_TIMEOUT)
+    return _run(["sudo", "eject", "-f", DRIVE_DEVICE])
 
 
 def _wait_for_device(timeout=10):
@@ -183,3 +188,37 @@ def _try_usb_reset():
     """
     unbind_result = subprocess.run(
         ["sudo", "tee", "/sys/bus/usb/drivers/usb/unbind"],
+        input=USB_PORT_PATH,
+        capture_output=True,
+        text=True,
+        timeout=COMMAND_TIMEOUT,
+    )
+    unbind_ok = unbind_result.returncode == 0
+
+    time.sleep(3)  # matches the brief's manual fallback timing
+
+    bind_result = subprocess.run(
+        ["sudo", "tee", "/sys/bus/usb/drivers/usb/bind"],
+        input=USB_PORT_PATH,
+        capture_output=True,
+        text=True,
+        timeout=COMMAND_TIMEOUT,
+    )
+    bind_ok = bind_result.returncode == 0
+
+    reset_output = (
+        f"unbind: {unbind_result.stdout}{unbind_result.stderr} "
+        f"bind: {bind_result.stdout}{bind_result.stderr}"
+    ).strip()
+
+    if not (unbind_ok and bind_ok):
+        return False, reset_output
+
+    if not _wait_for_device(timeout=10):
+        return False, f"{reset_output} | device node did not reappear within 10s"
+
+    # Device is back. The busy/lock condition that blocked eject before
+    # should now be cleared by the reset — retry the eject for real.
+    retry_ok, retry_output = _run(["sudo", "eject", "-f", DRIVE_DEVICE])
+    combined_output = f"{reset_output} | post-reset eject: {retry_output}"
+    return retry_ok, combined_output

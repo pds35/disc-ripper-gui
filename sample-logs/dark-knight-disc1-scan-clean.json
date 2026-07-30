@@ -1,0 +1,1723 @@
+{
+    "MainFeature": 1,
+    "TitleList": [
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 384000,
+                    "ChannelCount": 6,
+                    "ChannelLayout": 1551,
+                    "ChannelLayoutName": "5.1(side)",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "English (AC3, 5.1 ch, 384 kbps)",
+                    "LFECount": 1,
+                    "Language": "English",
+                    "LanguageCode": "eng",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                },
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 384000,
+                    "ChannelCount": 6,
+                    "ChannelLayout": 1551,
+                    "ChannelLayoutName": "5.1(side)",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Deutsch (AC3, 5.1 ch, 384 kbps)",
+                    "LFECount": 1,
+                    "Language": "Deutsch",
+                    "LanguageCode": "deu",
+                    "SampleRate": 48000,
+                    "TrackNumber": 2
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 29,
+                        "Ticks": 18853200
+                    },
+                    "Name": "Chapter 1"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 42,
+                        "Ticks": 20023200
+                    },
+                    "Name": "Chapter 2"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 53,
+                        "Ticks": 20955600
+                    },
+                    "Name": "Chapter 3"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 4,
+                        "Seconds": 30,
+                        "Ticks": 24303600
+                    },
+                    "Name": "Chapter 4"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 20,
+                        "Ticks": 18018000
+                    },
+                    "Name": "Chapter 5"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 4,
+                        "Seconds": 24,
+                        "Ticks": 23738400
+                    },
+                    "Name": "Chapter 6"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 55,
+                        "Ticks": 21182400
+                    },
+                    "Name": "Chapter 7"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 53,
+                        "Ticks": 15580800
+                    },
+                    "Name": "Chapter 8"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 4,
+                        "Seconds": 18,
+                        "Ticks": 23176800
+                    },
+                    "Name": "Chapter 9"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 25,
+                        "Ticks": 13014000
+                    },
+                    "Name": "Chapter 10"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 43,
+                        "Ticks": 14673600
+                    },
+                    "Name": "Chapter 11"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 49,
+                        "Ticks": 9799200
+                    },
+                    "Name": "Chapter 12"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 40,
+                        "Ticks": 19828800
+                    },
+                    "Name": "Chapter 13"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 39,
+                        "Ticks": 14328000
+                    },
+                    "Name": "Chapter 14"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 33,
+                        "Ticks": 19180800
+                    },
+                    "Name": "Chapter 15"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 23,
+                        "Ticks": 12859200
+                    },
+                    "Name": "Chapter 16"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 2,
+                        "Ticks": 10980000
+                    },
+                    "Name": "Chapter 17"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 16,
+                        "Ticks": 28440000
+                    },
+                    "Name": "Chapter 18"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 15,
+                        "Ticks": 12189600
+                    },
+                    "Name": "Chapter 19"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 39,
+                        "Ticks": 14306400
+                    },
+                    "Name": "Chapter 20"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 40,
+                        "Ticks": 14418000
+                    },
+                    "Name": "Chapter 21"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 49,
+                        "Ticks": 9810000
+                    },
+                    "Name": "Chapter 22"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 49,
+                        "Ticks": 15253200
+                    },
+                    "Name": "Chapter 23"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 26,
+                        "Ticks": 18511200
+                    },
+                    "Name": "Chapter 24"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 54,
+                        "Ticks": 21031200
+                    },
+                    "Name": "Chapter 25"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 4,
+                        "Seconds": 56,
+                        "Ticks": 26618400
+                    },
+                    "Name": "Chapter 26"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 25,
+                        "Ticks": 18471600
+                    },
+                    "Name": "Chapter 27"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 26960400
+                    },
+                    "Name": "Chapter 28"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 38,
+                        "Ticks": 14212800
+                    },
+                    "Name": "Chapter 29"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 4,
+                        "Seconds": 24,
+                        "Ticks": 23767200
+                    },
+                    "Name": "Chapter 30"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 4,
+                        "Seconds": 12,
+                        "Ticks": 22705200
+                    },
+                    "Name": "Chapter 31"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 52,
+                        "Ticks": 10112400
+                    },
+                    "Name": "Chapter 32"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 12,
+                        "Ticks": 17240400
+                    },
+                    "Name": "Chapter 33"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 14,
+                        "Ticks": 17438400
+                    },
+                    "Name": "Chapter 34"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 35,
+                        "Ticks": 19335600
+                    },
+                    "Name": "Chapter 35"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 2,
+                        "Seconds": 59,
+                        "Ticks": 16066800
+                    },
+                    "Name": "Chapter 36"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 3,
+                        "Ticks": 5670000
+                    },
+                    "Name": "Chapter 37"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 4,
+                        "Ticks": 16538400
+                    },
+                    "Name": "Chapter 38"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 35,
+                        "Ticks": 8524800
+                    },
+                    "Name": "Chapter 39"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 8,
+                        "Seconds": 43,
+                        "Ticks": 47041200
+                    },
+                    "Name": "Chapter 40"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                74,
+                74,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 2,
+                "Minutes": 14,
+                "Seconds": 17,
+                "Ticks": 725158800
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 1,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                74,
+                74,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "English (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "eng",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "العربية (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "ara",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 2
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Deutsch (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "deu",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 3
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "עברית (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "heb",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 4
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "íslenska (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "isl",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 5
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": true,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "English (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "eng",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 6
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": true,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Deutsch (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "deu",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 7
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Deutsch (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "deu",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 8
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 384000,
+                    "ChannelCount": 6,
+                    "ChannelLayout": 1551,
+                    "ChannelLayoutName": "5.1(side)",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "English (AC3, 5.1 ch, 384 kbps)",
+                    "LFECount": 1,
+                    "Language": "English",
+                    "LanguageCode": "eng",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                },
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 384000,
+                    "ChannelCount": 6,
+                    "ChannelLayout": 1551,
+                    "ChannelLayoutName": "5.1(side)",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Deutsch (AC3, 5.1 ch, 384 kbps)",
+                    "LFECount": 1,
+                    "Language": "Deutsch",
+                    "LanguageCode": "deu",
+                    "SampleRate": 48000,
+                    "TrackNumber": 2
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 13,
+                        "Ticks": 1152000
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                8,
+                0,
+                0,
+                2
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 12,
+                "Ticks": 1152000
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 2,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                8,
+                0,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "English (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "eng",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "العربية (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "ara",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 2
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Deutsch (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "deu",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 3
+                },
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "עברית (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "heb",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 4
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 1610612736,
+                    "ChannelLayoutName": "downmix",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "English (AC3, 2.0 ch, Dolby Surround, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "English",
+                    "LanguageCode": "eng",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 0,
+                        "Ticks": 5400000
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                68,
+                68,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 1,
+                "Seconds": 0,
+                "Ticks": 5400000
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 3,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                68,
+                66,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "English (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "eng",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 48,
+                        "Ticks": 4302000
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                0,
+                0,
+                2,
+                12
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 47,
+                "Ticks": 4302000
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 4,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                0,
+                0,
+                2,
+                12
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 49,
+                        "Ticks": 4446000
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                8,
+                8,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 49,
+                "Ticks": 4446000
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 5,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                8,
+                8,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 49,
+                        "Ticks": 4435200
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 49,
+                "Ticks": 4435200
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 6,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 49,
+                        "Ticks": 4431600
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                8,
+                8,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 49,
+                "Ticks": 4431600
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 7,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                8,
+                8,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 49,
+                        "Ticks": 4431600
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 49,
+                "Ticks": 4431600
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 8,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 49,
+                        "Ticks": 4431600
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                10,
+                8,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 49,
+                "Ticks": 4431600
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 9,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                8,
+                8,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": false,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": true
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (Wide Screen) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        },
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 192000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 192 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 0,
+                        "Seconds": 47,
+                        "Ticks": 4233600
+                    },
+                    "Name": "Chapter 1"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                82,
+                82,
+                18,
+                18
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 0,
+                "Seconds": 47,
+                "Ticks": 4233600
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 15,
+                    "Num": 16
+                },
+                "Width": 720
+            },
+            "Index": 10,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                82,
+                80,
+                16,
+                16
+            ],
+            "Metadata": {},
+            "Name": "BATMAN_BEGINS_DISC_1",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [
+                {
+                    "Attributes": {
+                        "4By3": true,
+                        "Children": false,
+                        "ClosedCaption": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Forced": false,
+                        "Large": false,
+                        "Letterbox": false,
+                        "Normal": false,
+                        "PanScan": false,
+                        "Wide": false
+                    },
+                    "Format": "bitmap",
+                    "Language": "Unknown (4:3) [VOBSUB]",
+                    "LanguageCode": "und",
+                    "Source": 0,
+                    "SourceName": "VOBSUB",
+                    "TrackNumber": 1
+                }
+            ],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        }
+    ]
+}
+

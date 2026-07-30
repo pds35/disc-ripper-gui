@@ -1,0 +1,1624 @@
+[14:26:33] Compile-time hardening features are enabled
+Cannot load libnvidia-encode.so.1
+[14:26:33] hb_init: starting libhb thread
+[14:26:33] thread 7ffebbabe620 started ("libhb")
+HandBrake 1.9.2 (2025041100) - Linux aarch64 - https://handbrake.fr
+4 CPUs detected
+Opening /dev/sr0...
+[14:26:33] CPU: Unknown
+[14:26:33]  - logical processor count: 4
+[14:26:33] hb_scan: path=/dev/sr0, title_index=0
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+[14:26:33] bd: not a bd - trying as a stream/file instead
+[14:26:33] dvd: Region mask 0xfd
+[14:26:33] scan: DVD has 58 title(s)
+[14:26:33] scan: scanning title 1
+[14:26:33] scan: duration is 00:14:17 (857000 ms)
+[14:26:33] pgc_id: 1, pgn: 1: pgc: 0x7ffeac038ab0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 1 has 1 chapters
+[14:26:33] scan: chap 1, 857000 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 2
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 3
+[14:26:33] scan: duration is 00:01:57 (117400 ms)
+[14:26:33] pgc_id: 3, pgn: 1: pgc: 0x7ffeac039b10
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 3 has 1 chapters
+[14:26:33] scan: chap 1, 117400 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 4
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 5
+[14:26:33] scan: duration is 00:08:18 (498800 ms)
+[14:26:33] pgc_id: 5, pgn: 1: pgc: 0x7ffeac03aff0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 5 has 1 chapters
+[14:26:33] scan: chap 1, 498800 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 6
+[14:26:33] scan: duration is 00:01:06 (66600 ms)
+[14:26:33] pgc_id: 6, pgn: 1: pgc: 0x7ffeac038ab0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 6 has 1 chapters
+[14:26:33] scan: chap 1, 66600 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 7
+[14:26:33] scan: duration is 00:12:49 (769000 ms)
+[14:26:33] pgc_id: 7, pgn: 1: pgc: 0x7ffeac03dcc0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 7 has 1 chapters
+[14:26:33] scan: chap 1, 769000 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 8
+[14:26:33] scan: duration is 00:02:30 (150000 ms)
+[14:26:33] pgc_id: 8, pgn: 1: pgc: 0x7ffeac039780
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 8 has 1 chapters
+[14:26:33] scan: chap 1, 150000 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 9
+[14:26:33] scan: duration is 00:14:14 (854200 ms)
+[14:26:33] pgc_id: 9, pgn: 1: pgc: 0x7ffeac039780
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 9 has 1 chapters
+[14:26:33] scan: chap 1, 854200 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 10
+[14:26:33] scan: duration is 00:12:50 (770000 ms)
+[14:26:33] pgc_id: 10, pgn: 1: pgc: 0x7ffeac038ab0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 10 has 1 chapters
+[14:26:33] scan: chap 1, 770000 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 11
+[14:26:33] scan: duration is 00:14:53 (893960 ms)
+[14:26:33] pgc_id: 11, pgn: 1: pgc: 0x7ffeac03f9b0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 11 has 1 chapters
+[14:26:33] scan: chap 1, 893960 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 12
+[14:26:33] scan: duration is 00:13:40 (820600 ms)
+[14:26:33] pgc_id: 12, pgn: 1: pgc: 0x7ffeac03de30
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 12 has 1 chapters
+[14:26:33] scan: chap 1, 820600 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 13
+[14:26:33] scan: duration is 00:13:01 (781400 ms)
+[14:26:33] pgc_id: 13, pgn: 1: pgc: 0x7ffeac038ad0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: id=0x21bd, lang=العربية (4:3) [VOBSUB], 3cc=ara ext=0
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: id=0x22bd, lang=Deutsch (4:3) [VOBSUB], 3cc=deu ext=0
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: id=0x23bd, lang=עברית (4:3) [VOBSUB], 3cc=heb ext=0
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: id=0x24bd, lang=íslenska (4:3) [VOBSUB], 3cc=isl ext=0
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: id=0x25bd, lang=italiano (4:3) [VOBSUB], 3cc=ita ext=0
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: id=0x26bd, lang=Portugues (4:3) [VOBSUB], 3cc=por ext=0
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: id=0x27bd, lang=español (4:3) [VOBSUB], 3cc=spa ext=0
+[14:26:33] scan: title 13 has 1 chapters
+[14:26:33] scan: chap 1, 781400 ms
+[14:26:33] scan: aspect = 4:3
+[14:26:33] scan: scanning title 14
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 15
+[14:26:33] scan: duration is 00:00:00 (960 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 16
+[14:26:33] scan: duration is 00:10:42 (642880 ms)
+[14:26:33] pgc_id: 3, pgn: 1: pgc: 0x7ffeac050e40
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 16 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 45080 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 45080 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 17
+[14:26:33] scan: duration is 00:08:22 (502280 ms)
+[14:26:33] pgc_id: 4, pgn: 1: pgc: 0x7ffeac057920
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 17 has 38 chapters
+[14:26:33] scan: chap 1, 5920 ms
+[14:26:33] scan: chap 2, 30160 ms
+[14:26:33] scan: chap 3, 4000 ms
+[14:26:33] scan: chap 4, 22120 ms
+[14:26:33] scan: chap 5, 4000 ms
+[14:26:33] scan: chap 6, 22120 ms
+[14:26:33] scan: chap 7, 4000 ms
+[14:26:33] scan: chap 8, 41080 ms
+[14:26:33] scan: chap 9, 4000 ms
+[14:26:33] scan: chap 10, 41080 ms
+[14:26:33] scan: chap 11, 4000 ms
+[14:26:33] scan: chap 12, 41080 ms
+[14:26:33] scan: chap 13, 4000 ms
+[14:26:33] scan: chap 14, 34000 ms
+[14:26:33] scan: chap 15, 4000 ms
+[14:26:33] scan: chap 16, 34000 ms
+[14:26:33] scan: chap 17, 4000 ms
+[14:26:33] scan: chap 18, 40000 ms
+[14:26:33] scan: chap 19, 4000 ms
+[14:26:33] scan: chap 20, 40000 ms
+[14:26:33] scan: chap 21, 4000 ms
+[14:26:33] scan: chap 22, 32320 ms
+[14:26:33] scan: chap 23, 4000 ms
+[14:26:33] scan: chap 24, 32320 ms
+[14:26:33] scan: chap 25, 4000 ms
+[14:26:33] scan: chap 26, 32320 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 480 ms
+[14:26:33] scan: chap 34, 480 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 480 ms
+[14:26:33] scan: chap 37, 480 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 18
+[14:26:33] scan: duration is 00:04:17 (257680 ms)
+[14:26:33] pgc_id: 5, pgn: 1: pgc: 0x7ffeac054520
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 18 has 23 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 29920 ms
+[14:26:33] scan: chap 3, 8080 ms
+[14:26:33] scan: chap 4, 25960 ms
+[14:26:33] scan: chap 5, 8080 ms
+[14:26:33] scan: chap 6, 25960 ms
+[14:26:33] scan: chap 7, 8080 ms
+[14:26:33] scan: chap 8, 22960 ms
+[14:26:33] scan: chap 9, 8080 ms
+[14:26:33] scan: chap 10, 22960 ms
+[14:26:33] scan: chap 11, 8080 ms
+[14:26:33] scan: chap 12, 22960 ms
+[14:26:33] scan: chap 13, 8080 ms
+[14:26:33] scan: chap 14, 22960 ms
+[14:26:33] scan: chap 15, 4120 ms
+[14:26:33] scan: chap 16, 22960 ms
+[14:26:33] scan: chap 17, 480 ms
+[14:26:33] scan: chap 18, 480 ms
+[14:26:33] scan: chap 19, 480 ms
+[14:26:33] scan: chap 20, 480 ms
+[14:26:33] scan: chap 21, 480 ms
+[14:26:33] scan: chap 22, 480 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 19
+[14:26:33] scan: duration is 00:05:36 (336040 ms)
+[14:26:33] pgc_id: 6, pgn: 1: pgc: 0x7ffeac046cc0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 19 has 32 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 25000 ms
+[14:26:33] scan: chap 3, 5680 ms
+[14:26:33] scan: chap 4, 30520 ms
+[14:26:33] scan: chap 5, 5080 ms
+[14:26:33] scan: chap 6, 31120 ms
+[14:26:33] scan: chap 7, 8080 ms
+[14:26:33] scan: chap 8, 19120 ms
+[14:26:33] scan: chap 9, 8080 ms
+[14:26:33] scan: chap 10, 19120 ms
+[14:26:33] scan: chap 11, 5680 ms
+[14:26:33] scan: chap 12, 24400 ms
+[14:26:33] scan: chap 13, 5680 ms
+[14:26:33] scan: chap 14, 24400 ms
+[14:26:33] scan: chap 15, 5680 ms
+[14:26:33] scan: chap 16, 24400 ms
+[14:26:33] scan: chap 17, 9640 ms
+[14:26:33] scan: chap 18, 18400 ms
+[14:26:33] scan: chap 19, 9640 ms
+[14:26:33] scan: chap 20, 18400 ms
+[14:26:33] scan: chap 21, 4600 ms
+[14:26:33] scan: chap 22, 23440 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 20
+[14:26:33] scan: duration is 00:01:00 (60320 ms)
+[14:26:33] pgc_id: 7, pgn: 1: pgc: 0x7ffeac060cb0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 20 has 64 chapters
+[14:26:33] scan: chap 1, 30080 ms
+[14:26:33] scan: chap 2, 480 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: chap 15, 480 ms
+[14:26:33] scan: chap 16, 480 ms
+[14:26:33] scan: chap 17, 480 ms
+[14:26:33] scan: chap 18, 480 ms
+[14:26:33] scan: chap 19, 480 ms
+[14:26:33] scan: chap 20, 480 ms
+[14:26:33] scan: chap 21, 480 ms
+[14:26:33] scan: chap 22, 480 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 480 ms
+[14:26:33] scan: chap 34, 480 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 480 ms
+[14:26:33] scan: chap 37, 480 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: chap 39, 480 ms
+[14:26:33] scan: chap 40, 480 ms
+[14:26:33] scan: chap 41, 480 ms
+[14:26:33] scan: chap 42, 480 ms
+[14:26:33] scan: chap 43, 480 ms
+[14:26:33] scan: chap 44, 480 ms
+[14:26:33] scan: chap 45, 480 ms
+[14:26:33] scan: chap 46, 480 ms
+[14:26:33] scan: chap 47, 480 ms
+[14:26:33] scan: chap 48, 480 ms
+[14:26:33] scan: chap 49, 480 ms
+[14:26:33] scan: chap 50, 480 ms
+[14:26:33] scan: chap 51, 480 ms
+[14:26:33] scan: chap 52, 480 ms
+[14:26:33] scan: chap 53, 480 ms
+[14:26:33] scan: chap 54, 480 ms
+[14:26:33] scan: chap 55, 480 ms
+[14:26:33] scan: chap 56, 480 ms
+[14:26:33] scan: chap 57, 480 ms
+[14:26:33] scan: chap 58, 480 ms
+[14:26:33] scan: chap 59, 480 ms
+[14:26:33] scan: chap 60, 480 ms
+[14:26:33] scan: chap 61, 480 ms
+[14:26:33] scan: chap 62, 480 ms
+[14:26:33] scan: chap 63, 480 ms
+[14:26:33] scan: chap 64, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 21
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 22
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 23
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 24
+[14:26:33] scan: duration is 00:10:42 (642880 ms)
+[14:26:33] pgc_id: 11, pgn: 1: pgc: 0x7ffeac04a6f0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 24 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 45080 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 45080 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 25
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 26
+[14:26:33] scan: duration is 00:00:00 (960 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 27
+[14:26:33] scan: duration is 00:10:42 (642880 ms)
+[14:26:33] pgc_id: 3, pgn: 1: pgc: 0x7ffeac0606e0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 27 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 45080 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 45080 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 28
+[14:26:33] scan: duration is 00:00:41 (41840 ms)
+[14:26:33] pgc_id: 4, pgn: 1: pgc: 0x7ffeac035cf0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 28 has 14 chapters
+[14:26:33] scan: chap 1, 5920 ms
+[14:26:33] scan: chap 2, 30160 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 29
+[14:26:33] scan: duration is 00:00:38 (38360 ms)
+[14:26:33] pgc_id: 5, pgn: 1: pgc: 0x7ffeac0606e0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 29 has 9 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 29920 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 30
+[14:26:33] scan: duration is 00:06:39 (399560 ms)
+[14:26:33] pgc_id: 6, pgn: 1: pgc: 0x7ffeac06ccd0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 30 has 38 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 24880 ms
+[14:26:33] scan: chap 3, 5680 ms
+[14:26:33] scan: chap 4, 30400 ms
+[14:26:33] scan: chap 5, 5080 ms
+[14:26:33] scan: chap 6, 31000 ms
+[14:26:33] scan: chap 7, 8080 ms
+[14:26:33] scan: chap 8, 19000 ms
+[14:26:33] scan: chap 9, 8080 ms
+[14:26:33] scan: chap 10, 19000 ms
+[14:26:33] scan: chap 11, 5680 ms
+[14:26:33] scan: chap 12, 24400 ms
+[14:26:33] scan: chap 13, 5680 ms
+[14:26:33] scan: chap 14, 24400 ms
+[14:26:33] scan: chap 15, 5680 ms
+[14:26:33] scan: chap 16, 24400 ms
+[14:26:33] scan: chap 17, 9640 ms
+[14:26:33] scan: chap 18, 18400 ms
+[14:26:33] scan: chap 19, 9640 ms
+[14:26:33] scan: chap 20, 18400 ms
+[14:26:33] scan: chap 21, 4600 ms
+[14:26:33] scan: chap 22, 23440 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 7720 ms
+[14:26:33] scan: chap 34, 19360 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 5080 ms
+[14:26:33] scan: chap 37, 31000 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 31
+[14:26:33] scan: duration is 00:01:00 (60320 ms)
+[14:26:33] pgc_id: 7, pgn: 1: pgc: 0x7ffeac049ca0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 31 has 64 chapters
+[14:26:33] scan: chap 1, 30080 ms
+[14:26:33] scan: chap 2, 480 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: chap 15, 480 ms
+[14:26:33] scan: chap 16, 480 ms
+[14:26:33] scan: chap 17, 480 ms
+[14:26:33] scan: chap 18, 480 ms
+[14:26:33] scan: chap 19, 480 ms
+[14:26:33] scan: chap 20, 480 ms
+[14:26:33] scan: chap 21, 480 ms
+[14:26:33] scan: chap 22, 480 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 480 ms
+[14:26:33] scan: chap 34, 480 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 480 ms
+[14:26:33] scan: chap 37, 480 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: chap 39, 480 ms
+[14:26:33] scan: chap 40, 480 ms
+[14:26:33] scan: chap 41, 480 ms
+[14:26:33] scan: chap 42, 480 ms
+[14:26:33] scan: chap 43, 480 ms
+[14:26:33] scan: chap 44, 480 ms
+[14:26:33] scan: chap 45, 480 ms
+[14:26:33] scan: chap 46, 480 ms
+[14:26:33] scan: chap 47, 480 ms
+[14:26:33] scan: chap 48, 480 ms
+[14:26:33] scan: chap 49, 480 ms
+[14:26:33] scan: chap 50, 480 ms
+[14:26:33] scan: chap 51, 480 ms
+[14:26:33] scan: chap 52, 480 ms
+[14:26:33] scan: chap 53, 480 ms
+[14:26:33] scan: chap 54, 480 ms
+[14:26:33] scan: chap 55, 480 ms
+[14:26:33] scan: chap 56, 480 ms
+[14:26:33] scan: chap 57, 480 ms
+[14:26:33] scan: chap 58, 480 ms
+[14:26:33] scan: chap 59, 480 ms
+[14:26:33] scan: chap 60, 480 ms
+[14:26:33] scan: chap 61, 480 ms
+[14:26:33] scan: chap 62, 480 ms
+[14:26:33] scan: chap 63, 480 ms
+[14:26:33] scan: chap 64, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 32
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 33
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 34
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 35
+[14:26:33] scan: duration is 00:10:42 (642880 ms)
+[14:26:33] pgc_id: 11, pgn: 1: pgc: 0x7ffeac030f90
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 35 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 45080 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 45080 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 36
+[14:26:33] scan: duration is 00:00:12 (12800 ms)
+[14:26:33] pgc_id: 1, pgn: 1: pgc: 0x7ffeac074870
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 36 has 1 chapters
+[14:26:33] scan: chap 1, 12800 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 37
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 38
+[14:26:33] scan: duration is 00:00:00 (960 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 39
+[14:26:33] scan: duration is 00:10:42 (642760 ms)
+[14:26:33] pgc_id: 3, pgn: 1: pgc: 0x7ffeac071fa0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 39 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 45080 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 44960 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 40
+[14:26:33] scan: duration is 00:00:42 (42320 ms)
+[14:26:33] pgc_id: 4, pgn: 1: pgc: 0x7ffeac02b560
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 40 has 15 chapters
+[14:26:33] scan: chap 1, 5920 ms
+[14:26:33] scan: chap 2, 30160 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: chap 15, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 41
+[14:26:33] scan: duration is 00:00:38 (38360 ms)
+[14:26:33] pgc_id: 5, pgn: 1: pgc: 0x7ffeac074870
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 41 has 9 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 29920 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 42
+[14:26:33] scan: duration is 00:06:39 (399560 ms)
+[14:26:33] pgc_id: 6, pgn: 1: pgc: 0x7ffeac0310e0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 42 has 38 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 24880 ms
+[14:26:33] scan: chap 3, 5680 ms
+[14:26:33] scan: chap 4, 30400 ms
+[14:26:33] scan: chap 5, 5080 ms
+[14:26:33] scan: chap 6, 31000 ms
+[14:26:33] scan: chap 7, 8080 ms
+[14:26:33] scan: chap 8, 19000 ms
+[14:26:33] scan: chap 9, 8080 ms
+[14:26:33] scan: chap 10, 19000 ms
+[14:26:33] scan: chap 11, 5680 ms
+[14:26:33] scan: chap 12, 24400 ms
+[14:26:33] scan: chap 13, 5680 ms
+[14:26:33] scan: chap 14, 24400 ms
+[14:26:33] scan: chap 15, 5680 ms
+[14:26:33] scan: chap 16, 24400 ms
+[14:26:33] scan: chap 17, 9640 ms
+[14:26:33] scan: chap 18, 18400 ms
+[14:26:33] scan: chap 19, 9640 ms
+[14:26:33] scan: chap 20, 18400 ms
+[14:26:33] scan: chap 21, 4600 ms
+[14:26:33] scan: chap 22, 23440 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 8080 ms
+[14:26:33] scan: chap 34, 19000 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 5080 ms
+[14:26:33] scan: chap 37, 31000 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 43
+[14:26:33] scan: duration is 00:01:00 (60320 ms)
+[14:26:33] pgc_id: 7, pgn: 1: pgc: 0x7ffeac02e9c0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 43 has 64 chapters
+[14:26:33] scan: chap 1, 30080 ms
+[14:26:33] scan: chap 2, 480 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: chap 15, 480 ms
+[14:26:33] scan: chap 16, 480 ms
+[14:26:33] scan: chap 17, 480 ms
+[14:26:33] scan: chap 18, 480 ms
+[14:26:33] scan: chap 19, 480 ms
+[14:26:33] scan: chap 20, 480 ms
+[14:26:33] scan: chap 21, 480 ms
+[14:26:33] scan: chap 22, 480 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 480 ms
+[14:26:33] scan: chap 34, 480 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 480 ms
+[14:26:33] scan: chap 37, 480 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: chap 39, 480 ms
+[14:26:33] scan: chap 40, 480 ms
+[14:26:33] scan: chap 41, 480 ms
+[14:26:33] scan: chap 42, 480 ms
+[14:26:33] scan: chap 43, 480 ms
+[14:26:33] scan: chap 44, 480 ms
+[14:26:33] scan: chap 45, 480 ms
+[14:26:33] scan: chap 46, 480 ms
+[14:26:33] scan: chap 47, 480 ms
+[14:26:33] scan: chap 48, 480 ms
+[14:26:33] scan: chap 49, 480 ms
+[14:26:33] scan: chap 50, 480 ms
+[14:26:33] scan: chap 51, 480 ms
+[14:26:33] scan: chap 52, 480 ms
+[14:26:33] scan: chap 53, 480 ms
+[14:26:33] scan: chap 54, 480 ms
+[14:26:33] scan: chap 55, 480 ms
+[14:26:33] scan: chap 56, 480 ms
+[14:26:33] scan: chap 57, 480 ms
+[14:26:33] scan: chap 58, 480 ms
+[14:26:33] scan: chap 59, 480 ms
+[14:26:33] scan: chap 60, 480 ms
+[14:26:33] scan: chap 61, 480 ms
+[14:26:33] scan: chap 62, 480 ms
+[14:26:33] scan: chap 63, 480 ms
+[14:26:33] scan: chap 64, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 44
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 45
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 46
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 47
+[14:26:33] scan: duration is 00:10:42 (642760 ms)
+[14:26:33] pgc_id: 11, pgn: 1: pgc: 0x7ffeac030f90
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 47 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 45080 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 44960 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 48
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 49
+[14:26:33] scan: duration is 00:00:00 (960 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 50
+[14:26:33] scan: duration is 00:10:42 (642760 ms)
+[14:26:33] pgc_id: 3, pgn: 1: pgc: 0x7ffeac070a10
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 50 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 44960 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 45080 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 51
+[14:26:33] scan: duration is 00:00:42 (42320 ms)
+[14:26:33] pgc_id: 4, pgn: 1: pgc: 0x7ffeac06bb00
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 51 has 15 chapters
+[14:26:33] scan: chap 1, 5920 ms
+[14:26:33] scan: chap 2, 30160 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: chap 15, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 52
+[14:26:33] scan: duration is 00:00:38 (38360 ms)
+[14:26:33] pgc_id: 5, pgn: 1: pgc: 0x7ffeac083bf0
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 52 has 9 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 29920 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 53
+[14:26:33] scan: duration is 00:06:40 (400040 ms)
+[14:26:33] pgc_id: 6, pgn: 1: pgc: 0x7ffeac07e740
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 53 has 39 chapters
+[14:26:33] scan: chap 1, 5080 ms
+[14:26:33] scan: chap 2, 24880 ms
+[14:26:33] scan: chap 3, 5680 ms
+[14:26:33] scan: chap 4, 30400 ms
+[14:26:33] scan: chap 5, 5080 ms
+[14:26:33] scan: chap 6, 31000 ms
+[14:26:33] scan: chap 7, 8080 ms
+[14:26:33] scan: chap 8, 19000 ms
+[14:26:33] scan: chap 9, 8080 ms
+[14:26:33] scan: chap 10, 19000 ms
+[14:26:33] scan: chap 11, 5680 ms
+[14:26:33] scan: chap 12, 24400 ms
+[14:26:33] scan: chap 13, 5680 ms
+[14:26:33] scan: chap 14, 24400 ms
+[14:26:33] scan: chap 15, 5680 ms
+[14:26:33] scan: chap 16, 24400 ms
+[14:26:33] scan: chap 17, 9640 ms
+[14:26:33] scan: chap 18, 18400 ms
+[14:26:33] scan: chap 19, 9640 ms
+[14:26:33] scan: chap 20, 18400 ms
+[14:26:33] scan: chap 21, 4720 ms
+[14:26:33] scan: chap 22, 23320 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 480 ms
+[14:26:33] scan: chap 34, 5080 ms
+[14:26:33] scan: chap 35, 31000 ms
+[14:26:33] scan: chap 36, 480 ms
+[14:26:33] scan: chap 37, 8080 ms
+[14:26:33] scan: chap 38, 19000 ms
+[14:26:33] scan: chap 39, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 54
+[14:26:33] scan: duration is 00:01:00 (60320 ms)
+[14:26:33] pgc_id: 7, pgn: 1: pgc: 0x7ffeac085110
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 54 has 64 chapters
+[14:26:33] scan: chap 1, 30080 ms
+[14:26:33] scan: chap 2, 480 ms
+[14:26:33] scan: chap 3, 480 ms
+[14:26:33] scan: chap 4, 480 ms
+[14:26:33] scan: chap 5, 480 ms
+[14:26:33] scan: chap 6, 480 ms
+[14:26:33] scan: chap 7, 480 ms
+[14:26:33] scan: chap 8, 480 ms
+[14:26:33] scan: chap 9, 480 ms
+[14:26:33] scan: chap 10, 480 ms
+[14:26:33] scan: chap 11, 480 ms
+[14:26:33] scan: chap 12, 480 ms
+[14:26:33] scan: chap 13, 480 ms
+[14:26:33] scan: chap 14, 480 ms
+[14:26:33] scan: chap 15, 480 ms
+[14:26:33] scan: chap 16, 480 ms
+[14:26:33] scan: chap 17, 480 ms
+[14:26:33] scan: chap 18, 480 ms
+[14:26:33] scan: chap 19, 480 ms
+[14:26:33] scan: chap 20, 480 ms
+[14:26:33] scan: chap 21, 480 ms
+[14:26:33] scan: chap 22, 480 ms
+[14:26:33] scan: chap 23, 480 ms
+[14:26:33] scan: chap 24, 480 ms
+[14:26:33] scan: chap 25, 480 ms
+[14:26:33] scan: chap 26, 480 ms
+[14:26:33] scan: chap 27, 480 ms
+[14:26:33] scan: chap 28, 480 ms
+[14:26:33] scan: chap 29, 480 ms
+[14:26:33] scan: chap 30, 480 ms
+[14:26:33] scan: chap 31, 480 ms
+[14:26:33] scan: chap 32, 480 ms
+[14:26:33] scan: chap 33, 480 ms
+[14:26:33] scan: chap 34, 480 ms
+[14:26:33] scan: chap 35, 480 ms
+[14:26:33] scan: chap 36, 480 ms
+[14:26:33] scan: chap 37, 480 ms
+[14:26:33] scan: chap 38, 480 ms
+[14:26:33] scan: chap 39, 480 ms
+[14:26:33] scan: chap 40, 480 ms
+[14:26:33] scan: chap 41, 480 ms
+[14:26:33] scan: chap 42, 480 ms
+[14:26:33] scan: chap 43, 480 ms
+[14:26:33] scan: chap 44, 480 ms
+[14:26:33] scan: chap 45, 480 ms
+[14:26:33] scan: chap 46, 480 ms
+[14:26:33] scan: chap 47, 480 ms
+[14:26:33] scan: chap 48, 480 ms
+[14:26:33] scan: chap 49, 480 ms
+[14:26:33] scan: chap 50, 480 ms
+[14:26:33] scan: chap 51, 480 ms
+[14:26:33] scan: chap 52, 480 ms
+[14:26:33] scan: chap 53, 480 ms
+[14:26:33] scan: chap 54, 480 ms
+[14:26:33] scan: chap 55, 480 ms
+[14:26:33] scan: chap 56, 480 ms
+[14:26:33] scan: chap 57, 480 ms
+[14:26:33] scan: chap 58, 480 ms
+[14:26:33] scan: chap 59, 480 ms
+[14:26:33] scan: chap 60, 480 ms
+[14:26:33] scan: chap 61, 480 ms
+[14:26:33] scan: chap 62, 480 ms
+[14:26:33] scan: chap 63, 480 ms
+[14:26:33] scan: chap 64, 480 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: scanning title 55
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 56
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 57
+[14:26:33] scan: duration is 00:00:00 (480 ms)
+[14:26:33] scan: ignoring title (too short)
+[14:26:33] scan: scanning title 58
+[14:26:33] scan: duration is 00:10:42 (642760 ms)
+[14:26:33] pgc_id: 11, pgn: 1: pgc: 0x7ffeac08b550
+[14:26:33] scan: checking audio 1
+[14:26:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 1
+[14:26:33] scan: id=0x20bd, lang=English (Wide Screen) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: id=0x21bd, lang=English (Pan & Scan) [VOBSUB], 3cc=eng ext=0
+[14:26:33] scan: checking subtitle 2
+[14:26:33] scan: checking subtitle 3
+[14:26:33] scan: checking subtitle 4
+[14:26:33] scan: checking subtitle 5
+[14:26:33] scan: checking subtitle 6
+[14:26:33] scan: checking subtitle 7
+[14:26:33] scan: checking subtitle 8
+[14:26:33] scan: title 58 has 16 chapters
+[14:26:33] scan: chap 1, 16720 ms
+[14:26:33] scan: chap 2, 600 ms
+[14:26:33] scan: chap 3, 39520 ms
+[14:26:33] scan: chap 4, 45080 ms
+[14:26:33] scan: chap 5, 45080 ms
+[14:26:33] scan: chap 6, 45080 ms
+[14:26:33] scan: chap 7, 45080 ms
+[14:26:33] scan: chap 8, 44960 ms
+[14:26:33] scan: chap 9, 45080 ms
+[14:26:33] scan: chap 10, 45080 ms
+[14:26:33] scan: chap 11, 45080 ms
+[14:26:33] scan: chap 12, 45080 ms
+[14:26:33] scan: chap 13, 45080 ms
+[14:26:33] scan: chap 14, 45080 ms
+[14:26:33] scan: chap 15, 45080 ms
+[14:26:33] scan: chap 16, 45080 ms
+[14:26:33] scan: aspect = 16:9
+[14:26:33] scan: decoding previews for title 1
+[14:26:33] scan: title angle(s) 1
+[ac3 @ 0x7ffeac027ff0] invalid frame type
+[ac3 @ 0x7ffeac027ff0] unable to determine channel mode
+[14:26:33] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:33] using bitstream PAR 16:15
+[14:26:33] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/76/8/8, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:33] Title is likely interlaced or telecined (6 out of 10 previews). You should do something about that.
+[14:26:33] scan: decoding previews for title 3
+[14:26:33] scan: title angle(s) 1
+[14:26:33] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:33] using bitstream PAR 16:15
+[14:26:33] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/82/8/8, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:33] scan: decoding previews for title 5
+[14:26:33] scan: title angle(s) 1
+[14:26:33] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:33] using bitstream PAR 16:15
+[14:26:33] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/76/8/6, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:33] Title is likely interlaced or telecined (5 out of 10 previews). You should do something about that.
+[14:26:33] scan: decoding previews for title 6
+[14:26:33] scan: title angle(s) 1
+[14:26:33] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:33] using bitstream PAR 16:15
+[14:26:33] scan: 10 previews, 720x576, 25.000 fps, autocrop = 82/82/8/52, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:33] scan: decoding previews for title 7
+[14:26:33] scan: title angle(s) 1
+[14:26:33] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:33] using bitstream PAR 16:15
+[14:26:33] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/76/8/8, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:33] Title is likely interlaced or telecined (5 out of 10 previews). You should do something about that.
+[14:26:33] scan: decoding previews for title 8
+[14:26:33] scan: title angle(s) 1
+[14:26:33] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 16:15
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 72/70/6/6, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:34] Title is likely interlaced or telecined (6 out of 10 previews). You should do something about that.
+[14:26:34] scan: decoding previews for title 9
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 16:15
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/74/8/6, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:34] Title is likely interlaced or telecined (5 out of 10 previews). You should do something about that.
+[14:26:34] scan: decoding previews for title 10
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 16:15
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/76/8/6, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:34] Title is likely interlaced or telecined (6 out of 10 previews). You should do something about that.
+[14:26:34] scan: decoding previews for title 11
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 16:15
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 80/80/10/10, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:34] Title is likely interlaced or telecined (5 out of 10 previews). You should do something about that.
+[14:26:34] scan: decoding previews for title 12
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 16:15
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/76/6/6, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 13
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 16:15
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 76/74/8/6, aspect 4:3, PAR 16:15, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 16
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 17
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 18
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 19
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 20
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/28/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 24
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 27
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:34] using bitstream PAR 64:45
+[14:26:34] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:34] scan: decoding previews for title 28
+[14:26:34] scan: title angle(s) 1
+[14:26:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 29
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 30
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 31
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/10/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 35
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 36
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 8/0/0/2, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 39
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 40
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 41
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 42
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 43
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/28/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 47
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 50
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:35] using bitstream PAR 64:45
+[14:26:35] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:35] scan: decoding previews for title 51
+[14:26:35] scan: title angle(s) 1
+[14:26:35] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:36] using bitstream PAR 64:45
+[14:26:36] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:36] scan: decoding previews for title 52
+[14:26:36] scan: title angle(s) 1
+[14:26:36] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:36] using bitstream PAR 64:45
+[14:26:36] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:36] scan: decoding previews for title 53
+[14:26:36] scan: title angle(s) 1
+[14:26:36] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:36] using bitstream PAR 64:45
+[14:26:36] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:36] scan: decoding previews for title 54
+[14:26:36] scan: title angle(s) 1
+[14:26:36] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:36] using bitstream PAR 64:45
+[14:26:36] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/28/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:36] scan: decoding previews for title 58
+[14:26:36] scan: title angle(s) 1
+[14:26:36] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[14:26:36] using bitstream PAR 64:45
+[14:26:36] scan: 10 previews, 720x576, 25.000 fps, autocrop = 0/0/62/20, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[14:26:36] libhb: scan thread found 36 valid title(s)
+HandBrake has exited.

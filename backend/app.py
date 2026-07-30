@@ -6,11 +6,13 @@ off a fake long-running job (see jobs.py) without blocking the request;
 /api/jobs/status polls its progress. Real HandBrake/abcde jobs replace
 the fake one in Phase 3+ — the request/poll pattern stays the same.
 """
+import time
 
 from flask import Flask, jsonify
 
 import drive
 import jobs
+import plex
 
 app = Flask(__name__)
 
@@ -73,6 +75,69 @@ def start_rip():
         return jsonify(error="a job is already running"), 409
     return jsonify(message="rip job started"), 202
 
+
+
+@app.route("/api/rip/start", methods=["POST"])
+def rip_start():
+    """
+    Phase 4: the real rip endpoint. Takes movie title/year and track
+    choices from the request body, builds the correct Plex path,
+    creates and owns the destination folder, then starts the actual
+    HandBrakeCLI rip job writing straight to that path.
+
+    Expects JSON body:
+        {
+            "title": "Batman Begins",
+            "year": 2005,
+            "handbrake_title": 1,
+            "audio_track": 1,
+            "sub_track": 1
+        }
+    """
+    from flask import request
+
+    data = request.get_json(force=True)
+    movie_title = data.get("title")
+    movie_year = data.get("year")
+    handbrake_title = data.get("handbrake_title")
+    audio_track = data.get("audio_track")
+    sub_track = data.get("sub_track")
+
+    if not all([movie_title, movie_year, handbrake_title, audio_track]):
+        return jsonify(error="title, year, handbrake_title, and audio_track are required"), 400
+
+    paths = plex.build_movie_paths(movie_title, movie_year)
+
+    dir_result = plex.ensure_movie_directory(paths["folder_path"])
+    if not dir_result["success"]:
+        return jsonify(error="Could not prepare destination folder: " + dir_result["output"]), 500
+    
+    stderr_log_path = "/tmp/rip-" + str(int(time.time())) + "-stderr.log"
+
+    # Optional - lets us test the pipeline against a short slice instead
+    # of committing to a full 1-3 hour rip every time we test something.
+    start_seconds = data.get("start_seconds")
+    stop_seconds = data.get("stop_seconds")
+
+    started = jobs.start_rip_job(
+        device="/dev/sr0",
+        title=handbrake_title,
+        audio_track=audio_track,
+        sub_track=sub_track,
+        output_path=paths["file_path"],
+        stderr_log_path=stderr_log_path,
+        start_seconds=start_seconds,
+        stop_seconds=stop_seconds,
+    )
+
+    if not started:
+        return jsonify(error="a job is already running"), 409
+
+    return jsonify(
+        message="rip started",
+        output_path=paths["file_path"],
+        stderr_log_path=stderr_log_path,
+    ), 202
 
 @app.route("/api/jobs/status")
 def job_status():

@@ -1,0 +1,63 @@
+[16:13:37] Compile-time hardening features are enabled
+Cannot load libnvidia-encode.so.1
+[16:13:37] hb_init: starting libhb thread
+[16:13:37] thread 7fff6a16e620 started ("libhb")
+HandBrake 1.9.2 (2025041100) - Linux aarch64 - https://handbrake.fr
+4 CPUs detected
+Opening /dev/sr0...
+[16:13:37] CPU: Unknown
+[16:13:37]  - logical processor count: 4
+[16:13:37] hb_scan: path=/dev/sr0, title_index=0
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+[16:13:37] bd: not a bd - trying as a stream/file instead
+[16:13:37] dvd: Region mask 0xfd
+[16:13:37] scan: DVD has 1 title(s)
+[16:13:37] scan: scanning title 1
+[16:13:37] scan: duration is 02:48:28 (10108640 ms)
+[16:13:37] pgc_id: 1, pgn: 1: pgc: 0x7fff5c012460
+[16:13:37] scan: checking audio 1
+[16:13:37] scan: id=0x80bd, lang=Unknown (AC3), 3cc=und ext=0
+[16:13:37] scan: title 1 has 34 chapters
+[16:13:37] scan: chap 1, 300560 ms
+[16:13:37] scan: chap 2, 299520 ms
+[16:13:37] scan: chap 3, 300040 ms
+[16:13:37] scan: chap 4, 300040 ms
+[16:13:37] scan: chap 5, 300040 ms
+[16:13:37] scan: chap 6, 300040 ms
+[16:13:37] scan: chap 7, 300040 ms
+[16:13:37] scan: chap 8, 300040 ms
+[16:13:37] scan: chap 9, 300040 ms
+[16:13:37] scan: chap 10, 300040 ms
+[16:13:37] scan: chap 11, 300040 ms
+[16:13:37] scan: chap 12, 300040 ms
+[16:13:37] scan: chap 13, 300040 ms
+[16:13:37] scan: chap 14, 299520 ms
+[16:13:37] scan: chap 15, 300560 ms
+[16:13:37] scan: chap 16, 299520 ms
+[16:13:37] scan: chap 17, 300040 ms
+[16:13:37] scan: chap 18, 300040 ms
+[16:13:37] scan: chap 19, 300040 ms
+[16:13:37] scan: chap 20, 300040 ms
+[16:13:37] scan: chap 21, 300040 ms
+[16:13:37] scan: chap 22, 300040 ms
+[16:13:37] scan: chap 23, 300040 ms
+[16:13:37] scan: chap 24, 300040 ms
+[16:13:37] scan: chap 25, 300040 ms
+[16:13:37] scan: chap 26, 300040 ms
+[16:13:37] scan: chap 27, 299520 ms
+[16:13:37] scan: chap 28, 300040 ms
+[16:13:37] scan: chap 29, 300040 ms
+[16:13:37] scan: chap 30, 300040 ms
+[16:13:37] scan: chap 31, 300040 ms
+[16:13:37] scan: chap 32, 300040 ms
+[16:13:37] scan: chap 33, 300040 ms
+[16:13:37] scan: chap 34, 208360 ms
+[16:13:37] scan: aspect = 16:9
+[16:13:41] scan: decoding previews for title 1
+[16:13:41] scan: title angle(s) 1
+[16:13:41] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=224000 Unknown (AC3, 2.0 ch, 224 kbps)
+[16:13:43] using bitstream PAR 64:45
+[16:13:43] scan: 10 previews, 720x576, 25.000 fps, autocrop = 68/70/0/0, aspect 16:9, PAR 64:45, color profile: 5-1-6, chroma location: left
+[16:13:43] libhb: scan thread found 1 valid title(s)
+HandBrake has exited.

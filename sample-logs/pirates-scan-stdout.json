@@ -1,0 +1,628 @@
+Version: {
+    "Arch": "aarch64",
+    "Name": "HandBrake",
+    "Official": true,
+    "RepoDate": "2025-02-20 18:37:15",
+    "RepoHash": "e117cfe7fca37abeec59ea4201e5d93ed7477746",
+    "System": "Linux",
+    "Type": "release",
+    "Version": {
+        "Major": 1,
+        "Minor": 9,
+        "Point": 2
+    },
+    "VersionString": "1.9.2"
+}
+libdvdnav: DVD Title: My Movies
+libdvdnav: DVD Serial Number: 071016_1428
+libdvdnav: DVD Title (Alternative): 
+libdvdnav: DVD disk reports itself with Region mask 0x00000000. Regions: 01 02 03 04 05 06 07 08
+libdvdnav: DVD disk reports itself with Region mask 0x00000000. Regions: 01 02 03 04 05 06 07 08
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x000007a0
+libdvdread: Elapsed time 0
+libdvdread: Found 1 VTS's
+libdvdread: Elapsed time 0
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 0,
+        "PreviewCount": 1,
+        "Progress": 0.5,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+libdvdnav: DVD disk reports itself with Region mask 0x00000000. Regions: 01 02 03 04 05 06 07 08
+Progress: {
+    "Scanning": {
+        "Preview": 1,
+        "PreviewCount": 10,
+        "Progress": 0.55000001192092896,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 3,
+        "PreviewCount": 10,
+        "Progress": 0.64999997615814209,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 4,
+        "PreviewCount": 10,
+        "Progress": 0.69999998807907104,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 5,
+        "PreviewCount": 10,
+        "Progress": 0.75,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 7,
+        "PreviewCount": 10,
+        "Progress": 0.85000002384185791,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+Progress: {
+    "Scanning": {
+        "Preview": 10,
+        "PreviewCount": 10,
+        "Progress": 1.0,
+        "SequenceID": 0,
+        "Title": 1,
+        "TitleCount": 1
+    },
+    "State": "SCANNING"
+}
+JSON Title Set: {
+    "MainFeature": -1,
+    "TitleList": [
+        {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": false,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 224000,
+                    "ChannelCount": 2,
+                    "ChannelLayout": 3,
+                    "ChannelLayoutName": "stereo",
+                    "Codec": 2048,
+                    "CodecName": "ac3",
+                    "CodecParam": 86019,
+                    "Description": "Unknown (AC3, 2.0 ch, 224 kbps)",
+                    "LFECount": 0,
+                    "Language": "Unknown",
+                    "LanguageCode": "und",
+                    "SampleRate": 48000,
+                    "TrackNumber": 1
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 1,
+                        "Ticks": 27050400
+                    },
+                    "Name": "Chapter 1"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 26956800
+                    },
+                    "Name": "Chapter 2"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 3"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 4"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 5"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 6"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 7"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 8"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 9"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 10"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 11"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 12"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 13"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 26956800
+                    },
+                    "Name": "Chapter 14"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 1,
+                        "Ticks": 27050400
+                    },
+                    "Name": "Chapter 15"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 26956800
+                    },
+                    "Name": "Chapter 16"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 17"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 18"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 19"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 20"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 21"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 22"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 23"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 24"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 25"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 26"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 26956800
+                    },
+                    "Name": "Chapter 27"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 28"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 29"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 30"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 31"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 32"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 5,
+                        "Seconds": 0,
+                        "Ticks": 27003600
+                    },
+                    "Name": "Chapter 33"
+                },
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 3,
+                        "Seconds": 28,
+                        "Ticks": 18752400
+                    },
+                    "Name": "Chapter 34"
+                }
+            ],
+            "Color": {
+                "BitDepth": 8,
+                "ChromaLocation": 1,
+                "ChromaSubsampling": "4:2:0",
+                "Format": 0,
+                "Matrix": 6,
+                "Primary": 5,
+                "Range": 1,
+                "Transfer": 1
+            },
+            "Crop": [
+                68,
+                70,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 2,
+                "Minutes": 48,
+                "Seconds": 28,
+                "Ticks": 909777600
+            },
+            "FrameRate": {
+                "Den": 1080000,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 576,
+                "PAR": {
+                    "Den": 45,
+                    "Num": 64
+                },
+                "Width": 720
+            },
+            "Index": 1,
+            "InterlaceDetected": false,
+            "KeepDuplicateTitles": false,
+            "LooseCrop": [
+                64,
+                68,
+                0,
+                0
+            ],
+            "Metadata": {},
+            "Name": "My Movies",
+            "Path": "/dev/sr0",
+            "Playlist": -1,
+            "SubtitleList": [],
+            "Type": 0,
+            "VideoCodec": "mpeg2video"
+        }
+    ]
+}
+

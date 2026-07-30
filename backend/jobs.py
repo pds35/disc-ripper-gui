@@ -111,12 +111,13 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
     with _job_lock:
         if _job_state["state"] == "running":
             return False
-
         command_str = (
             "HandBrakeCLI -i " + device + " -t " + str(title)
-            + " -a " + str(audio_track) + " -s " + str(sub_track)
+            + " -a " + str(audio_track)
+            + (" -s " + str(sub_track) if sub_track is not None else "")
             + " -o " + output_path
         )
+
         _job_state["state"] = "running"
         _job_state["command"] = command_str
         _job_state["started_at"] = time.time()
@@ -133,20 +134,26 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
                 "-i", device,
                 "-t", str(title),
                 "-a", str(audio_track),
-                "-s", str(sub_track),
                 "-o", output_path,
                 "--preset", "Fast 1080p30",
                 "--comb-detect",
                 "--decomb",
                 "--json",
             ]
+            # Some discs (e.g. a Pirates of the Caribbean disc found
+            # during testing) have zero subtitle tracks - passing -s
+            # with a track number that doesn't exist would fail, so
+            # only include it when a real sub_track was given.
+            if sub_track is not None:
+                handbrake_command += ["-s", str(sub_track)]
             if start_seconds is not None:
                 handbrake_command += ["--start-at", "duration:" + str(start_seconds)]
             if stop_seconds is not None:
                 handbrake_command += ["--stop-at", "duration:" + str(stop_seconds)]
 
             process = subprocess.Popen(
-                handbrake_command,                stdout=subprocess.PIPE,
+                handbrake_command,
+                stdout=subprocess.PIPE,
                 stderr=stderr_file,
                 text=True,
                 bufsize=1,

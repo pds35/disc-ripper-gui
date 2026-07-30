@@ -4,6 +4,62 @@ Newest entry on top. One entry per work session, not per commit. See
 `BUILD-PROCESS.md` §3 for the format this follows.
 
 ---
+## 2026-07-30 - Phase 4 complete: rip to correct Plex path, ownership, real end-to-end test
+
+Built plex.py: build_movie_paths() constructs the exact Plex-convention
+path from the brief ("Title (Year)/Title (Year).mkv"), with a
+sanitize function that strips filesystem-unsafe characters (slashes,
+wildcards) while keeping common movie-title punctuation (colons,
+apostrophes, dashes) intact - important since real titles like
+"Pirates of the Caribbean: At World's End" need that punctuation
+preserved for correct Plex matching. ensure_movie_directory() creates
+the folder and chowns it to pauls:pauls per the brief's requirement.
+Tested for real against the actual /mnt/nvme/media/movies path -
+confirmed no sudo needed, since Flask already runs as pauls.
+
+Found and fixed a real edge case along the way: the Pirates disc has
+exactly ONE title and zero subtitle tracks. Two fixes needed:
+get_main_feature() now treats a single-title disc as the main feature
+even when HandBrake reports MainFeature as -1 (added a real unit test
+for this). jobs.py's start_rip_job() now only passes HandBrakeCLI's -s
+flag when a real sub_track is given, instead of always passing one -
+a disc with no subtitles would otherwise get a nonsensical -s flag.
+
+Added /api/rip/start: the real Phase 4 endpoint. Takes title/year/
+track choices, builds the Plex path, creates+owns the folder, then
+starts the actual rip writing straight to that path. Also accepts
+optional start_seconds/stop_seconds - genuinely useful (not just a
+testing hack) for previewing a short slice before committing to a
+multi-hour full rip.
+
+Tested for real, fully end-to-end: scanned the Pirates disc, hit
+/api/rip/start with a 60-second slice, watched it complete via
+/api/jobs/status (state done, percent 100, returncode 0), then
+confirmed the actual file landed at the exact right path with correct
+pauls:pauls ownership - "Pirates of the Caribbean: At World's End
+(2007).mkv" inside a correctly-named folder, colon and apostrophe
+intact. Deleted the test clip afterward so it doesn't confuse the real
+Plex library.
+
+Hit one real paste-corruption bug today doing a nano find-and-replace
+edit in the middle of jobs.py (two separate lines got fused together,
+same failure class as previous sessions, but this time during an
+in-place edit rather than a big multi-line paste). Fixed with a small,
+targeted Python script rather than re-pasting the whole edit. Worth
+remembering: appending new code at the end of a file has been
+reliable all project; editing/replacing text in the MIDDLE of an
+existing file via manual nano find-replace is the riskier operation on
+this terminal - prefer scripted replacements (or full-file rewrites)
+for anything beyond a trivial one-line change.
+
+Full test suite: 15 tests passing (9 handbrake.py, 6 plex.py).
+Committed and tagged v0.4-rip-to-plex.
+
+Next: Phase 5 - wire the frontend dashboard (the mockup) to this real
+backend, replacing manual curl calls with an actual UI. Could also
+revisit the fake /api/jobs/start test route and /api/jobs/start_rip
+test route - both were useful scaffolding but may be worth removing
+once the frontend calls /api/rip/start directly.
 
 ## 2026-07-30 - Phase 3 complete: live progress parsing from a real running rip
 

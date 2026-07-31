@@ -126,6 +126,20 @@ def job_status():
     """Poll this to see the current job's state."""
     return jsonify(jobs.get_status())
 
+@app.route("/api/jobs/cancel", methods=["POST"])
+def cancel_job():
+    """
+    Cancel the currently running job (rip or fake job).
+    Sends SIGTERM to the subprocess (escalating to SIGKILL after 5s if
+    it doesn't exit), deletes any partial output file, and marks the
+    job "cancelled" once it actually stops — see jobs.cancel_job() for
+    the full sequence.
+    """
+    cancelled = jobs.cancel_job()
+    if not cancelled:
+        return jsonify(error="no job is currently running"), 409
+    return jsonify(message="cancel requested"), 202
+
 
 @app.route("/api/drive/wake", methods=["POST"])
 def wake_drive():
@@ -143,7 +157,7 @@ def eject_drive():
     Refuses to eject while a job is actively running — pulling the disc
     mid-rip would corrupt the rip and likely confuse HandBrake rather
     than cleanly failing. The person has to wait for the job to finish
-    (or we could add a "cancel job" endpoint later if that's needed).
+    or hit "cancel" firstsee /api/jobs/cancel) if they want the disc back sooner.
     """
     if jobs.get_status()["state"] == "running":
         return jsonify(error="cannot eject while a job is running"), 409

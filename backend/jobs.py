@@ -9,7 +9,6 @@ command (`sleep`) so we can develop and test this without touching the
 drive or competing with a real rip for CPU.
 
 Design decisions (see DEVLOG for the dated version of this):
-
 - Single global job at a time. This app only ever drives one physical
   optical drive, so there's never a need for multiple concurrent jobs.
   Trying to start a second job while one is running is rejected rather
@@ -18,8 +17,7 @@ Design decisions (see DEVLOG for the dated version of this):
   restarts mid-job, the job's status is lost (though the underlying
   subprocess, if it's something like HandBrake, would keep running
   orphaned — worth revisiting once we're running real rips). Acceptable
-  trade-off for now; SQLite is an easy upgrade later if this becomes a
-  problem.
+  trade-off for now.
 - subprocess.Popen(), not subprocess.run(). run() blocks until the
   process finishes, which would freeze the Flask request (and the whole
   dev server, since Flask's dev server is single-threaded by default).
@@ -28,19 +26,29 @@ Design decisions (see DEVLOG for the dated version of this):
 - A background thread calls Popen().wait() so we notice when the job
   finishes (and capture its exit code) without the main Flask thread
   blocking on it.
+- Finished-job history is persisted to SQLite (backend/history_db.py),
+  so it survives an app restart. The *current* job's live status stays
+  in-memory only, deliberately — persisting live progress too would
+  mean a DB write on every poll, and we decided that wasn't worth it
+  for a single-user homelab dashboard (see DEVLOG).
 """
-
+import os
 import subprocess
 import threading
 import time
 
 import handbrake
+import history_db
+
+# Make sure the history table exists before anything tries to write to
+# it. Cheap no-op if it's already there.
+history_db.init_db()
 
 # The one and only job's state. Intentionally simple — see module
 # docstring for why this isn't a database (yet).
 _job_lock = threading.Lock()
 _job_state = {
-    "state": "idle",       # idle | running | done | error
+    "state": "idle",       # idle | running | done | error | cancelled
     "command": None,
     "started_at": None,
     "finished_at": None,
@@ -50,20 +58,23 @@ _job_state = {
     "rate_fps": None,
     "movie_title": None,
     "movie_year": None,
+    "output_path": None,    # needed so cancel_job() can clean up a partial file
 }
 
-# Completed jobs, most recent first. In-memory only - lost on app
-# restart, same trade-off as _job_state (see module docstring). Good
-# enough for a single-user homelab dashboard; revisit with SQLite if
-# that ever becomes annoying.
-_job_history = []
-_history_lock = threading.Lock()
+# The currently-running subprocess, if any — kept at module level (not
+# just local to _run()) so cancel_job() can reach it from outside the
+# background thread. Both fields are protected by _job_lock, same as
+# _job_state.
+_current_process = None
+_cancel_requested = False
 
 
 def get_history(limit=10):
-    """Return the most recent completed jobs, most recent first."""
-    with _history_lock:
-        return list(_job_history[:limit])
+    """Return the most recent completed jobs, most recent first.
+    Reads from SQLite now, not the in-memory list — see module
+    docstring."""
+    return history_db.get_recent(limit)
+
 
 def get_status():
     """Return a snapshot of the current job's status."""
@@ -71,40 +82,90 @@ def get_status():
         return dict(_job_state)  # copy, so callers can't mutate our state
 
 
+def cancel_job():
+    """
+    Request cancellation of the current running job.
+
+    Sends SIGTERM first, so HandBrake gets a chance to exit cleanly
+    rather than being killed mid-write. A background watchdog escalates
+    to SIGKILL after 5 seconds if it's still alive (stuck, or ignoring
+    the signal). Either way, once the process actually dies, the job's
+    own _run() thread notices — it was already blocked on
+    process.wait() — and does its normal cleanup, using
+    _cancel_requested to mark the final state as "cancelled" instead of
+    "error" (HandBrake's exit code after SIGTERM won't be 0, but this
+    wasn't a failure, we asked for it).
+
+    Also deletes the partial output file, if there is one — a half
+    -encoded .mkv sitting at the real destination filename could get
+    mistaken for a finished rip (by Plex, or by us) if left behind.
+
+    Returns True if a cancel was requested, False if there was nothing
+    running to cancel.
+    """
+    global _cancel_requested
+    with _job_lock:
+        if _job_state["state"] != "running" or _current_process is None:
+            return False
+        _cancel_requested = True
+        process = _current_process
+        output_path = _job_state.get("output_path")
+
+    process.terminate()  # SIGTERM - ask nicely first
+
+    def _escalate():
+        time.sleep(5)
+        if process.poll() is None:  # still alive after 5s of asking nicely
+            process.kill()  # SIGKILL - not optional this time
+
+    threading.Thread(target=_escalate, daemon=True).start()
+
+    if output_path and os.path.exists(output_path):
+        try:
+            os.remove(output_path)
+        except OSError:
+            pass  # not worth failing the cancel over a cleanup step
+
+    return True
+
+
 def start_fake_job(duration_seconds=30):
     """
     Start a fake long-running job (just `sleep`) to prove the runner
     pattern works. Returns True if started, False if a job is already
     running.
-
-    Phase 3 will add a start_rip_job() that runs HandBrakeCLI instead —
-    same underlying pattern, real command.
     """
+    global _cancel_requested
     with _job_lock:
         if _job_state["state"] == "running":
             return False  # refuse to start a second job
-
         _job_state["state"] = "running"
         _job_state["command"] = f"sleep {duration_seconds}"
         _job_state["started_at"] = time.time()
         _job_state["finished_at"] = None
         _job_state["returncode"] = None
+        _job_state["output_path"] = None
+        _cancel_requested = False
 
     def _run():
-        # This runs in a background thread. Popen starts the process;
-        # .wait() blocks THIS thread (not the Flask request thread)
-        # until it finishes, then we record the result.
+        global _current_process
         process = subprocess.Popen(["sleep", str(duration_seconds)])
-        returncode = process.wait()
-
         with _job_lock:
-            _job_state["state"] = "done" if returncode == 0 else "error"
+            _current_process = process
+        returncode = process.wait()
+        with _job_lock:
+            if _cancel_requested:
+                _job_state["state"] = "cancelled"
+            else:
+                _job_state["state"] = "done" if returncode == 0 else "error"
             _job_state["finished_at"] = time.time()
             _job_state["returncode"] = returncode
+            _current_process = None
 
     thread = threading.Thread(target=_run, daemon=True)
     thread.start()
     return True
+
 
 def start_rip_job(device, title, audio_track, sub_track, output_path,
                    stderr_log_path, start_seconds=None, stop_seconds=None,
@@ -124,6 +185,7 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
 
     Returns True if started, False if a job is already running.
     """
+    global _cancel_requested
     with _job_lock:
         if _job_state["state"] == "running":
             return False
@@ -133,7 +195,6 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
             + (" -s " + str(sub_track) if sub_track is not None else "")
             + " -o " + output_path
         )
-
         _job_state["state"] = "running"
         _job_state["command"] = command_str
         _job_state["started_at"] = time.time()
@@ -144,8 +205,11 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
         _job_state["rate_fps"] = None
         _job_state["movie_title"] = movie_title
         _job_state["movie_year"] = movie_year
+        _job_state["output_path"] = output_path
+        _cancel_requested = False
 
     def _run():
+        global _current_process
         with open(stderr_log_path, "w") as stderr_file:
             handbrake_command = [
                 "HandBrakeCLI",
@@ -168,7 +232,6 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
                 handbrake_command += ["--start-at", "duration:" + str(start_seconds)]
             if stop_seconds is not None:
                 handbrake_command += ["--stop-at", "duration:" + str(stop_seconds)]
-
             process = subprocess.Popen(
                 handbrake_command,
                 stdout=subprocess.PIPE,
@@ -176,21 +239,23 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
                 text=True,
                 bufsize=1,
             )
-
+            with _job_lock:
+                _current_process = process
             for block in handbrake.iter_progress_blocks(process.stdout):
                 summary = handbrake.summarize_progress(block)
                 with _job_lock:
                     _job_state["percent"] = summary["percent"]
                     _job_state["eta_seconds"] = summary["eta_seconds"]
                     _job_state["rate_fps"] = summary["rate_fps"]
-
             returncode = process.wait()
-
         with _job_lock:
-            _job_state["state"] = "done" if returncode == 0 else "error"
+            if _cancel_requested:
+                _job_state["state"] = "cancelled"
+            else:
+                _job_state["state"] = "done" if returncode == 0 else "error"
             _job_state["finished_at"] = time.time()
             _job_state["returncode"] = returncode
-            if returncode == 0:
+            if _job_state["state"] == "done":
                 _job_state["percent"] = 100.0
             history_entry = {
                 "movie_title": movie_title,
@@ -201,9 +266,8 @@ def start_rip_job(device, title, audio_track, sub_track, output_path,
                 "finished_at": _job_state["finished_at"],
                 "duration_seconds": _job_state["finished_at"] - _job_state["started_at"],
             }
-
-        with _history_lock:
-            _job_history.insert(0, history_entry)
+            _current_process = None
+        history_db.add_entry(history_entry)
 
     thread = threading.Thread(target=_run, daemon=True)
     thread.start()

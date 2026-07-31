@@ -4,6 +4,55 @@ Newest entry on top. One entry per work session, not per commit. See
 `BUILD-PROCESS.md` §3 for the format this follows.
 
 
+## 2026-07-31 - Cancel job + persistent history (SQLite)
+
+Two features flagged as "worth considering" at the end of Phase 5:
+cancelling an in-progress rip, and surviving an app restart without
+losing job history.
+
+Cancel: stores the live Popen process object at module level (not just
+inside _run()'s closure) so a separate cancel_job() call can reach it.
+SIGTERM first, SIGKILL escalation after 5s via a watchdog thread if
+HandBrake doesn't exit cleanly. Also deletes the partial output file on
+cancel - a half-encoded .mkv sitting at the real destination filename
+could get mistaken for a finished rip by Plex or by us.
+
+Tested against both the fake sleep job and a real HandBrake rip
+(60-second slice of an old DVD). Confirmed via /api/jobs/status:
+returncode -15 (killed by SIGTERM), state "cancelled" (not "error").
+Confirmed the partial file was actually removed from the Plex movies
+folder.
+
+Persistence: new backend/history_db.py, SQLite-backed. Deliberately
+scoped to finished jobs only, not the live/current job - the in-memory
+_job_state dict stays as-is for that, since persisting live progress
+would mean a DB write on every poll and wasn't worth it for a
+single-user homelab dashboard. Opens/closes a short-lived connection
+per call rather than keeping one open, since sqlite3 connections
+aren't safe to share across jobs.py's background threads.
+
+Dead end: pasted the /api/jobs/cancel route into app.py via nano and it
+landed twice, back to back - second paste must have gone in without the
+cursor where I expected. ast.parse() didn't catch it since duplicate
+function defs and unreachable code are both syntactically valid Python
+(the second def silently overwrote the first at import time, and a
+stray leftover return after the real one is just dead code, not a
+syntax error) - Flask's own route-registration check is what actually
+caught it, at runtime, with an AssertionError about the endpoint name
+being overwritten. Worth remembering: ast.parse only proves the file
+parses, not that a paste landed where intended - grep -n for the
+function name should be the added check after any nano paste from now
+on, not just ast.parse.
+
+Also found: the SQLite history table only gets written to from
+start_rip_job()'s _run(), not start_fake_job()'s - same as it was
+before today, just more visible now that we were actively checking for
+rows. Tested cancel with the fake job first (fast, no hardware needed),
+got a false "no history entry" scare, then confirmed it was expected
+once we ran the same test against a real rip.
+
+Next: Phase 6 - abcde/CD audio ripping path.
+
 ## 2026-07-30 - Phase 5 complete: real dashboard UI, wired to the backend
 
 Built the actual dashboard from the brief's mockup description (no

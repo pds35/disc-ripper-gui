@@ -20,3 +20,8 @@ Thumbs.db
 *.mkv
 *.flac
 *.ogg
+
+# SQLite job history — generated at runtime, grows with real usage,
+# shouldn't be committed (same reasoning as ripped media above)
+data/*.db
+

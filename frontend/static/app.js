@@ -46,7 +46,7 @@ function updateJobUI(job) {
   const ledDotEl = document.getElementById("drive-led-dot");
   const ledLabelEl = document.getElementById("drive-led-label");
   const ejectBtn = document.getElementById("eject-btn");
-
+  const cancelBtn = document.getElementById("cancel-btn");
   if (job.state === "running") {
     const title = job.movie_title
       ? job.movie_title + (job.movie_year ? " (" + job.movie_year + ")" : "")
@@ -63,6 +63,7 @@ function updateJobUI(job) {
     ledDotEl.className = "drive-led__dot drive-led__dot--busy";
     ledLabelEl.textContent = "DRIVE: BUSY";
     ejectBtn.disabled = true;
+    cancelBtn.disabled = false;
   } else if (job.state === "done") {
     const title = job.movie_title
       ? job.movie_title + (job.movie_year ? " (" + job.movie_year + ")" : "")
@@ -77,11 +78,13 @@ function updateJobUI(job) {
     ledDotEl.className = "drive-led__dot drive-led__dot--idle";
     ledLabelEl.textContent = "DRIVE: IDLE";
     ejectBtn.disabled = false;
+    cancelBtn.disabled = true;
   } else if (job.state === "error") {
     titleEl.textContent = "Last rip failed";
     ledDotEl.className = "drive-led__dot drive-led__dot--error";
     ledLabelEl.textContent = "DRIVE: ERROR";
     ejectBtn.disabled = false;
+    cancelBtn.disabled = true;
   } else {
     titleEl.textContent = "No job running";
     fillEl.style.width = "0%";
@@ -93,6 +96,7 @@ function updateJobUI(job) {
     ledDotEl.className = "drive-led__dot drive-led__dot--idle";
     ledLabelEl.textContent = "DRIVE: IDLE";
     ejectBtn.disabled = false;
+    cancelBtn.disabled = true;
   }
 }
 
@@ -192,8 +196,27 @@ async function handleEject() {
   btn.disabled = false;
 }
 
+async function handleCancel() {
+  const btn = document.getElementById("cancel-btn");
+  btn.disabled = true;
+  showDriveMessage("Cancelling...");
+  try {
+    const res = await fetch("/api/jobs/cancel", { method: "POST" });
+    const data = await res.json();
+    if (res.status === 409) {
+      showDriveMessage("Nothing to cancel - no job is running.");
+    } else {
+      showDriveMessage("Cancel requested.");
+      refreshDashboard();
+    }
+  } catch (err) {
+    showDriveMessage("Cancel request failed - check connection.");
+  }
+}
+
 document.getElementById("wake-btn").addEventListener("click", handleWake);
 document.getElementById("eject-btn").addEventListener("click", handleEject);
+document.getElementById("cancel-btn").addEventListener("click", handleCancel);
 
 refreshDashboard();
 setInterval(refreshDashboard, POLL_INTERVAL_MS);

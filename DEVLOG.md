@@ -3,6 +3,47 @@
 Newest entry on top. One entry per work session, not per commit. See
 `BUILD-PROCESS.md` §3 for the format this follows.
 
+## 2026-07-31 - Cancel button added to the dashboard
+
+Wired the backend cancel_job() endpoint (from earlier today) up to a
+real button in the UI - previously it only existed as something we
+tested via curl.
+
+Added a `.btn--red` variant (accent-red token already existed in
+style.css, just wasn't used as a button color yet - Cancel felt like
+the right place for it, visually distinct from amber "start something"
+actions). Button sits between Wake and Eject in the current-job card,
+disabled by default and only enabled while a job is running - same
+pattern the Eject button already used, just inverted.
+
+Tested against real hardware, not just the fake job: scanned an old
+DVD, started a real rip through the UI, clicked Cancel a few seconds
+in. Confirmed clean across every layer - browser console had no
+errors, server log showed a clean 202 with no exceptions, the
+HandBrakeCLI stderr log ended mid-encode with no crash trace (just
+stopped, because SIGTERM asked it to), the partial .mkv got deleted
+from the Plex folder, and the SQLite history table picked up the
+"cancelled" entry correctly.
+
+Dead end: pasted the new .btn--red CSS block via nano and it landed as
+a duplicate .btn--outline block instead - second nano paste session,
+second time content landed somewhere other than intended. Caught it
+immediately this time with grep -n right after saving, rather than
+discovering it later. Cheap enough to fix (one wrong block, swap it for
+the right one) but confirms the lesson from earlier today: always grep
+for what should be there immediately after any nano paste, don't trust
+that a save went the way you expect.
+
+For the JS changes (four scattered disabled-state lines plus a new
+function and listener), used sed with exact line numbers instead of
+nano/paste for anything past the first simple addition - grepped for
+line numbers before every edit, worked from bottom to top when
+inserting multiple lines so earlier line numbers wouldn't shift underneath.
+Slower than one big paste, but zero mistakes this way - worth doing by
+default for any multi-spot edit to an existing file from now on, not
+just when a paste has already gone wrong once.
+
+Next: Phase 6 - abcde/CD audio ripping path.
 
 ## 2026-07-31 - Cancel job + persistent history (SQLite)
 
